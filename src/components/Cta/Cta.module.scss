@@ -1,0 +1,13 @@
+.secondary-cta {
+  display: block;
+  padding: 7px 15px;
+  border-radius: 12px;
+  border: 1px solid #d8d8d8;
+  color: #8992b5;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #eee;
+  }
+}

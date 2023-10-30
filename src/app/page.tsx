@@ -1,11 +1,9 @@
-import Image from 'next/image';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
     <main className="">
-      <div className="">
-        <Image className="" src="/macro.svg" alt="Macro Logo" width={180} height={37} priority />
-      </div>
+      <Header />
     </main>
   );
 }
