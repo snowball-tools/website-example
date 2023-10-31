@@ -5,10 +5,10 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Audits', href: '#', current: true },
-  { name: 'Bots', href: '#', current: false },
-  { name: 'Audit Library', href: '#', current: false },
-  { name: 'Blog', href: '#', current: false },
+  { name: 'Audits', href: '/', current: true },
+  { name: 'Bots', href: '/bots', current: false },
+  { name: 'Audit Library', href: 'https://0xmacro.com/library', current: false },
+  { name: 'Blog', href: 'https://0xmacro.com/blog/', current: false },
 ];
 
 function classNames(...classes: string[]) {

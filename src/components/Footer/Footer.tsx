@@ -46,16 +46,16 @@ const Footer = () => {
               <h3 className="mb-5 font-semibold uppercase">Company</h3>
               <ul className="flex flex-col gap-4 text-gray-600">
                 <li>
-                  <Link href="#">Audits</Link>
+                  <Link href="/">Audits</Link>
                 </li>
                 <li>
-                  <Link href="#">Bots</Link>
+                  <Link href="/bots">Bots</Link>
                 </li>
                 <li>
-                  <Link href="#">Audit Library</Link>
+                  <Link href="https://0xmacro.com/library">Audit Library</Link>
                 </li>
                 <li>
-                  <Link href="#">Blog</Link>
+                  <Link href="https://0xmacro.com/blog/">Blog</Link>
                 </li>
               </ul>
             </div>
