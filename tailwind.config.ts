@@ -12,6 +12,9 @@ const config: Config = {
         sans: ['var(--font-sans)'],
         mono: ['var(--font-mono)'],
       },
+      backgroundImage: {
+        'hero-pattern': "url('/misc/hero-pattern.svg')",
+      },
     },
   },
   plugins: [],

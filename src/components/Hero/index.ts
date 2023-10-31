@@ -1,3 +1,4 @@
 import HeroHome from './HeroHome';
+import HeroBots from './HeroBots';
 
-export { HeroHome };
+export { HeroHome, HeroBots };
