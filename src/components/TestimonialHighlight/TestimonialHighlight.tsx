@@ -9,7 +9,7 @@ const TestimonialHighlight = () => {
             “Macro engineers are personable, professional, and experienced.”
           </p>
           <p className="text-gray-600">
-            Macro's auditing helps us be more confident that our code deployments meet our security standards. Macro
+            Macro&apos;s auditing helps us be more confident that our code deployments meet our security standards. Macro
             engineers are personable, professional, and experienced.
           </p>
         </blockquote>
