@@ -1,13 +1,50 @@
-.secondary-cta {
-  display: block;
-  padding: 7px 15px;
+@import '../../styles/variables.scss';
+
+.cta-primary {
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $sunriseOrange, $coralPink, $skyBlue);
+  z-index: 0;
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to left, $sunriseOrange, $coralPink, $skyBlue);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: 12px;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.cta-secondary {
+  display: inline-block;
+  padding: 12px 25px;
   border-radius: 12px;
   border: 1px solid #d8d8d8;
   color: #8992b5;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 14px;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: #eee;
+    background-color: rgba(145, 145, 145, 0.05);
   }
 }

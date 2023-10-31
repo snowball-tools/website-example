@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './_variables.scss';
+
+.gradient-text,
+.gradient-text > *:after {
+  background-image: linear-gradient(to right, #feb34c, #ff9f93, #b0c8ff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.triple-border {
+  position: relative;
+  border-radius: 17px;
+  border: 5px solid #f1eefe;
+}
+
+.triple-border::before,
+.triple-border::after {
+  content: '';
+  position: absolute;
+}
+
+.triple-border::before {
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  border: 5px solid #f7f5fe;
+  z-index: -1;
+  border-radius: 22px;
+}
+
+.triple-border::after {
+  top: -15px;
+  right: -15px;
+  bottom: -15px;
+  left: -15px;
+  z-index: -2;
+  border: 5px solid #fbfaff;
+  border-radius: 28px;
+}

@@ -1,3 +1,4 @@
-import Cta from './Cta';
+import CtaPrimary from './CtaPrimary';
+import CtaSecondary from './CtaSecondary';
 
-export default Cta;
+export { CtaPrimary, CtaSecondary };
