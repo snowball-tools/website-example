@@ -12,6 +12,11 @@ export default function Home() {
       <Header />
       <HeroHome />
       <DetailAuditReportsTab />
+      <section className="max-w-sm mx-auto text-center text-gray-500">
+        <h1 className="text-3xl mb-16 font-mono sm:text-4xl">
+          <span className="gradient-text">Web3</span> builders <br /> love Macro
+        </h1>
+      </section>
       <TestimonialHighlight />
       <TestimonialWall />
       <RequestAudit />
