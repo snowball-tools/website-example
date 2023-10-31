@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import RequestAudit from '@/components/RequestAudit';
 import TestimonialHighlight from '@/components/TestimonialHighlight';
 import TestimonialWall from '@/components/TestimonialWall';
+import StandaloneHeading from '@/components/StandaloneHeading';
 
 export default function Home() {
   return (
@@ -12,11 +13,9 @@ export default function Home() {
       <Header />
       <HeroHome />
       <DetailAuditReportsTab />
-      <section className="max-w-sm mx-auto text-center text-gray-500">
-        <h1 className="text-3xl mb-16 font-mono sm:text-4xl">
-          <span className="gradient-text">Web3</span> builders <br /> love Macro
-        </h1>
-      </section>
+      <StandaloneHeading>
+        <span className="gradient-text">Web3</span> builders <br /> love Macro
+      </StandaloneHeading>
       <TestimonialHighlight />
       <TestimonialWall />
       <RequestAudit />
