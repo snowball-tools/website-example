@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import DetailAuditReportsTab from '@/components/DetailAuditReportsTab';
 import Footer from '@/components/Footer';
 import RequestAudit from '@/components/RequestAudit';
+import TestimonialWall from '@/components/TestimonialWall';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <HeroHome />
       <DetailAuditReportsTab />
+      <TestimonialWall />
       <RequestAudit />
       <Footer />
     </main>
