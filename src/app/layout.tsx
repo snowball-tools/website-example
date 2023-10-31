@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
-import { DM_Sans } from 'next/font/google';
+import { sans, mono } from './fonts';
 import '../styles/globals.scss';
-
-const dmSams = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Macro',
@@ -11,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={dmSams.className}>{children}</body>
+    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
+      <body className={`${sans.className} antialiased`}>{children}</body>
     </html>
   );
 }
