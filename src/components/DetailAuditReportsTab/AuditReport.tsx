@@ -21,7 +21,7 @@ const AuditReport = ({ data }: AuditReportProps) => {
     <BorderCard className="p-6 sm:p-12 max-w-xl m-auto tex-left font-mono font-[300]">
       <Image
         className={style['test']}
-        src={`/clients/${data.client}.svg`}
+        src={`/clients/${data.client.toLowerCase()}.svg`}
         alt={`${data.client} Logo`}
         width={100}
         height={37}
