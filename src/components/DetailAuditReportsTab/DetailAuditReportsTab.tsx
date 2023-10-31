@@ -95,7 +95,7 @@ const DetailAuditReportsTab = () => {
                       className={`${selected ? 'border-gray-400' : ''} border py-4 px-4 sm:px-7 xl:px-8 rounded-xl bg-white`}
                     >
                       <Image
-                        src={`/clients/${report.client}.svg`}
+                        src={`/clients/${report.client.toLowerCase()}.svg`}
                         alt={`${report.client} Logo`}
                         width={100}
                         height={37}
