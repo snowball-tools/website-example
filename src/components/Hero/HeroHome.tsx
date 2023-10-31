@@ -29,7 +29,7 @@ const HeroHome = () => {
         <br />
         Smart Contracts.
       </h1>
-      <CtaPrimary className="mx-auto mt-10" href="#">
+      <CtaPrimary className="mx-auto mt-10" href="#" border>
         Request an Audit
       </CtaPrimary>
     </div>

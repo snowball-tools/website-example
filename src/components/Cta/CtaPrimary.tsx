@@ -7,11 +7,12 @@ interface CtaProps {
   children: React.ReactNode;
   href: string;
   icon?: string;
+  border?: boolean;
 }
 
-const CtaPrimary = ({ className, children, href, icon }: CtaProps) => {
+const CtaPrimary = ({ className, children, href, icon, border }: CtaProps) => {
   return (
-    <div className={`${className} triple-border inline-block`}>
+    <div className={`${className} ${border ? 'triple-border' : ''} inline-block`}>
       <Link className={`${style['cta-primary']} ${icon ? '!flex gap-2' : ''}`} href={href}>
         {icon && <Image src={icon} alt="" width={20} height={20} />}
         <p>{children}</p>

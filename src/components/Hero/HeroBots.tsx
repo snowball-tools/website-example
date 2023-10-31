@@ -22,7 +22,7 @@ const HeroBots = () => {
       </h1>
       <p className="text-center mt-6">Using our Swarm of 300+ vulnerability detection bots.</p>
       <div className="flex flex-col mx-auto mt-10 items-center gap-6 sm:flex-row">
-        <CtaPrimary className="flex gap-2" href="#" icon="/icons/github.svg">
+        <CtaPrimary className="flex gap-2" href="#" icon="/icons/github.svg" border>
           Try it with a Free Scan
         </CtaPrimary>
         <Link className="flex gap-2 font-semibold items-center hover:underline" href="/">
