@@ -53,8 +53,8 @@ const Nav = () => {
               <ul className="flex space-x-4">{getNavItems()}</ul>
             </div>
 
-            <Disclosure.Panel className="md:hidden absolute top-[58px] left-0 right-0">
-              <ul className="space-y-1 px-2 pb-3 pt-2">{getNavItems()}</ul>
+            <Disclosure.Panel className="md:hidden absolute z-10 top-[58px] left-0 right-0">
+              <ul className="space-y-1 px-2 pb-3 pt-2 bg-white shadow">{getNavItems()}</ul>
             </Disclosure.Panel>
           </div>
         </>
