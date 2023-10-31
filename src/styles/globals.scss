@@ -6,7 +6,7 @@
 
 .gradient-text,
 .gradient-text > *:after {
-  background-image: linear-gradient(to right, #feb34c, #ff9f93, #b0c8ff);
+  background-image: linear-gradient(to left, $sunriseOrange, $coralPink, $skyBlue);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;

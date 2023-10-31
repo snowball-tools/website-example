@@ -1,0 +1,30 @@
+@import 'src/styles/variables.scss';
+
+.critical {
+  background-color: $critical;
+}
+
+.high {
+  background-color: $high;
+}
+
+.medium {
+  background-color: $medium;
+}
+
+.low {
+  background-color: $low;
+}
+
+.code-quality {
+  background-color: $codeQuality;
+}
+
+.gas-optimization {
+  background-color: $gasOptimization;
+}
+
+.grayed-out {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
