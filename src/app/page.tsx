@@ -2,6 +2,7 @@ import { HeroHome } from '@/components/Hero';
 import Header from '../components/Header';
 import DetailAuditReportsTab from '@/components/DetailAuditReportsTab';
 import Footer from '@/components/Footer';
+import RequestAudit from '@/components/RequestAudit';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <HeroHome />
       <DetailAuditReportsTab />
+      <RequestAudit />
       <Footer />
     </main>
   );
