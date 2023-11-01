@@ -2,9 +2,13 @@ import Link from 'next/link';
 import { BorderCard } from '../Card';
 import { CtaPrimary } from '../Cta';
 
-const RequestAudit = () => {
+type RequestAuditProps = {
+  auditForm: React.RefObject<HTMLElement>;
+};
+
+const RequestAudit = ({ auditForm }: RequestAuditProps) => {
   return (
-    <section id="request-audit" className="px-2 mb-20 sm:max-w-5xl sm:mx-auto">
+    <section ref={auditForm} id="request-audit" className="px-2 mb-20 sm:max-w-5xl sm:mx-auto">
       <header className="bg-[#fdf5f5] px-6 pt-6 pb-44 rounded-3xl text-center sm:px-44 sm:pt-12 ">
         <h1 className="font-mono text-2xl text-gray-600 mb-4 sm:text-4xl sm:mb-6">
           Request an <span className="gradient-text">Audit!</span>

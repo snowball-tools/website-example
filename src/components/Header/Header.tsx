@@ -4,7 +4,11 @@ import Nav from '../Nav';
 import { CtaSecondary } from '../Cta';
 import style from './Header.module.scss';
 
-const Header = () => {
+type HeaderProps = {
+  handleCtaClick?: (e: React.MouseEvent<HTMLElement>) => void;
+};
+
+const Header = ({ handleCtaClick }: HeaderProps) => {
   return (
     <>
       <header className="relative p-2 sm:p-4 flex flex-row-reverse md:flex-row justify-between max-w-5xl mx-auto items-center">
@@ -13,7 +17,9 @@ const Header = () => {
         </Link>
         <Nav />
         <div className="hidden md:block">
-          <CtaSecondary href="#">Request an Audit</CtaSecondary>
+          <CtaSecondary onClick={handleCtaClick} href="/">
+            Request an Audit
+          </CtaSecondary>
         </div>
       </header>
     </>

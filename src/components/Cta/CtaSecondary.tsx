@@ -5,11 +5,12 @@ interface CtaProps {
   className?: string;
   children: React.ReactNode;
   href: string;
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
 }
 
-const CtaSecondary = ({ className, children, href }: CtaProps) => {
+const CtaSecondary = ({ className, children, href, onClick }: CtaProps) => {
   return (
-    <Link className={`${className} ${style['cta-secondary']}`} href={href}>
+    <Link onClick={onClick} className={`${className} ${style['cta-secondary']}`} href={href}>
       <p>{children}</p>
     </Link>
   );

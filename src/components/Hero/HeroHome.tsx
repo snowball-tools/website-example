@@ -4,6 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { CtaPrimary } from '../Cta';
 import { TypeAnimation } from 'react-type-animation';
 
+type HeroHomeProps = {
+  handleCtaClick: (e: React.MouseEvent<HTMLElement>) => void;
+};
+
 // Array of contract types to display.
 const contractTypes = ['ZK', 'Bridge', 'DeFi', 'Infrastructure', 'NFTs', 'DAO', 'Social', 'Governance'];
 
@@ -16,7 +20,7 @@ const getSequence = () => {
   return sequence;
 };
 
-const HeroHome = () => {
+const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
   const [typedText, setTypedText] = useState('');
 
   return (
@@ -29,7 +33,7 @@ const HeroHome = () => {
         <br />
         Smart Contracts.
       </h1>
-      <CtaPrimary className="mx-auto mt-10" href="#" border>
+      <CtaPrimary onClick={handleCtaClick} className="mx-auto mt-10" href="#" border>
         Request an Audit
       </CtaPrimary>
     </div>
