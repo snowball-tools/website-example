@@ -15,6 +15,17 @@ const config: Config = {
       backgroundImage: {
         'hero-pattern': "url('/misc/hero-pattern.svg')",
       },
+      colors: {
+        sunriseOrange: '#feb34c',
+        coralPink: '#ff9f93',
+        skyBlue: '#b0c8ff',
+        critical: '#9f2121',
+        high: '#b2450d',
+        medium: '#d6ab16',
+        low: '#2d8f60',
+        codeQuality: '#8a56c0',
+        gasOptimization: '#a32e66',
+      },
     },
   },
   plugins: [],
