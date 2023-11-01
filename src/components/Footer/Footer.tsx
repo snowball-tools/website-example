@@ -15,7 +15,7 @@ const renderSocialLinks = () => {
         </Link>
       </li>
       <li>
-        <Link href="https://0xmacro.com/youtube">
+        <Link href="https://0xmacro.com/youtube" target="_blank">
           <Image className="" src="/icons/youtube.svg" alt="YouTube" width={24} height={24} />
         </Link>
       </li>
@@ -52,10 +52,14 @@ const Footer = () => {
                   <Link href="/bots">Bots</Link>
                 </li>
                 <li>
-                  <Link href="https://0xmacro.com/library">Audit Library</Link>
+                  <Link href="https://0xmacro.com/library" target="_blank">
+                    Audit Library
+                  </Link>
                 </li>
                 <li>
-                  <Link href="https://0xmacro.com/blog/">Blog</Link>
+                  <Link href="https://0xmacro.com/blog/" target="_blank">
+                    Blog
+                  </Link>
                 </li>
               </ul>
             </div>

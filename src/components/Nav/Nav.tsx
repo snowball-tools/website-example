@@ -7,8 +7,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 const navigation = [
   { name: 'Audits', href: '/', current: true },
   { name: 'Bots', href: '/bots', current: false },
-  { name: 'Audit Library', href: 'https://0xmacro.com/library', current: false },
-  { name: 'Blog', href: 'https://0xmacro.com/blog/', current: false },
+  { name: 'Audit Library', href: 'https://0xmacro.com/library', current: false, newTab: true },
+  { name: 'Blog', href: 'https://0xmacro.com/blog/', current: false, newTab: true },
 ];
 
 function classNames(...classes: string[]) {
@@ -25,6 +25,7 @@ function getNavItems() {
           'block px-3 py-2 text-lg sm:text-base hover:text-black transition-colors duration-300'
         )}
         aria-current={item.current ? 'page' : undefined}
+        target={item.newTab ? '_blank' : undefined}
       >
         {item.name}
       </Link>
