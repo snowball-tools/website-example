@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { BorderCard } from '../Card';
-import { CtaPrimary } from '../Cta';
+import { Widget } from '@typeform/embed-react';
 
 type RequestAuditProps = {
   auditForm: React.RefObject<HTMLElement>;
@@ -21,45 +20,14 @@ const RequestAudit = ({ auditForm }: RequestAuditProps) => {
           </Link>
         </p>
       </header>
-
-      <BorderCard className="p-6 mx-5 -mt-36 sm:p-12 m-auto tex-left sm:mx-auto sm:max-w-xl">
-        <form className="flex flex-col gap-6">
-          <div>
-            <label className="block uppercase text-sm font-mono mb-2">Your Name</label>
-            <input className="block border rounded-lg p-3 w-full" type="text" placeholder="example: Harsh Patel" />
-          </div>
-
-          <div>
-            <label className="block uppercase text-sm font-mono mb-2">Email</label>
-            <input className="block border rounded-lg p-3 w-full" type="email" placeholder="harsh@0xmacro.com" />
-          </div>
-
-          <div>
-            <label className="block uppercase text-sm font-mono mb-2">Message</label>
-            <textarea className="block border rounded-lg p-3 w-full" placeholder="Your message goes here..." />
-          </div>
-
-          <div className="flex gap-5 sm:gap-4">
-            <input type="checkbox" id="agreeTerms" className="inline-block" />
-            <label htmlFor="agreeTerms" className="text-sm sm:text-base">
-              <span>I agree with the</span>
-              <Link href="#" className="underline ml-1" target="_blank">
-                Terms of Use
-              </Link>
-              <span className="ml-1">and</span>
-              <Link href="#" className="underline ml-1" target="_blank">
-                Privacy Policy
-              </Link>
-            </label>
-          </div>
-
-          <div>
-            <CtaPrimary className="" href="#">
-              Request an Audit
-            </CtaPrimary>
-          </div>
-        </form>
-      </BorderCard>
+      <Widget
+        id="fOSnAebr"
+        className="mx-2 -mt-36 sm:mx-auto sm:max-w-xl shadow rounded"
+        autoResize
+        disableScroll
+        noHeading
+        inlineOnMobile
+      />
     </section>
   );
 };
