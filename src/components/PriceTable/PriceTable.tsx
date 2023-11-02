@@ -10,7 +10,7 @@ const PriceTable = () => {
         </h1>
         <p className="font-mono text-3xl mb-3">$195/m</p>
         <span className="text-gray-600 block mb-3 sm:mb-6">Per repository</span>
-        <CtaPrimary className="flex gap-2 justify-center text-sm" href="#" icon="/icons/github.svg">
+        <CtaPrimary className="flex gap-2 justify-center text-sm" href="https://swarm.0xmacro.com/" icon="/icons/github.svg">
           Try it with a Free Scan
         </CtaPrimary>
       </BorderCard>

@@ -8,7 +8,7 @@ const HeroBots = () => {
     <div className="mt-8 flex flex-col">
       <div className="text-center mb-5 sm:mb-3">
         <Link
-          href="/"
+          href="https://swarm.0xmacro.com/"
           className="border rounded-3xl py-1 px-5 inline-block bg-white hover:bg-gray-100 transition-all duration-500"
         >
           <div className="flex gap-2">
@@ -22,10 +22,10 @@ const HeroBots = () => {
       </h1>
       <p className="text-center mt-6">Using our Swarm of 300+ vulnerability detection bots.</p>
       <div className="flex flex-col mx-auto mt-10 items-center gap-6 sm:flex-row">
-        <CtaPrimary className="flex gap-2" href="#" icon="/icons/github.svg" border>
+        <CtaPrimary className="flex gap-2" href="https://swarm.0xmacro.com/" icon="/icons/github.svg" border>
           Try it with a Free Scan
         </CtaPrimary>
-        <Link className="flex gap-2 font-semibold items-center hover:underline" href="/">
+        <Link className="flex gap-2 font-semibold items-center hover:underline" href="https://swarm.0xmacro.com/">
           Check Pricing
           <ArrowUpRightIcon className="w-3 h-3" />
         </Link>
