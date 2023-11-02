@@ -1,26 +1,24 @@
 import Image from 'next/image';
 import { Report } from './DetailAuditReportsTab';
 import { BorderCard } from '../Card';
-import style from './AuditReport.module.scss';
 
 type AuditReportProps = {
   data: Report;
 };
 
 const bgClassMap: Record<string, string> = {
-  Critical: 'critical',
-  High: 'high',
-  Medium: 'medium',
-  Low: 'low',
-  'Code Quality': 'code-quality',
-  'Gas Optimization': 'gas-optimization',
+  Critical: 'bg-critical',
+  High: 'bg-high',
+  Medium: 'bg-medium',
+  Low: 'bg-low',
+  'Code Quality': 'bg-codeQuality',
+  'Gas Optimization': 'bg-gasOptimization',
 };
 
 const AuditReport = ({ data }: AuditReportProps) => {
   return (
-    <BorderCard className="p-6 sm:p-12 max-w-xl m-auto tex-left font-mono font-[300]">
+    <BorderCard className="p-6 max-w-xl m-auto tex-left font-mono font-[300] sm:p-12">
       <Image
-        className={style['test']}
         src={`/clients/${data.client.toLowerCase()}.svg`}
         alt={`${data.client} Logo`}
         width={100}
@@ -43,8 +41,8 @@ const AuditReport = ({ data }: AuditReportProps) => {
         <div className="flex flex-wrap">
           {data.findings.map((finding, index) => {
             return (
-              <div key={index} className="flex w-full sm:w-1/2 items-center h-10">
-                <p className={`${style[bgClassMap[finding.type]]} inline-block py-0.5 px-2 rounded-lg mr-2 text-white`}>
+              <div key={index} className="flex w-full items-center h-10 sm:w-1/2 ">
+                <p className={`${bgClassMap[finding.type]} inline-block py-0.5 px-2 rounded-lg mr-2 text-white`}>
                   {finding.quantity}
                 </p>
                 <p className="">{finding.type}</p>

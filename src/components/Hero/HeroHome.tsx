@@ -25,7 +25,7 @@ const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
 
   return (
     <div className="mt-10 flex flex-col">
-      <h1 className="text-center font-bold text-2xl leading-10 md:text-5xl md:leading-[70.5px] text-#05051E">
+      <h1 className="text-center font-bold text-2xl text-[#05051e] leading-10 md:text-5xl md:leading-[70.5px]">
         Secure Your{' '}
         <span className="gradient-text">
           <TypeAnimation sequence={getSequence()} speed={10} cursor={true} repeat={Infinity} />

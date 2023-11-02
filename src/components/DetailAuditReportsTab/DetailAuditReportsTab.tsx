@@ -84,7 +84,7 @@ const DetailAuditReportsTab = () => {
         Work with you soon-to-be <span className="gradient-text block sm:inline">favorite Auditors.</span>
       </p>
 
-      <div className="mx-2 sm:mx-6 mt-16">
+      <div className="mx-2 mt-16 sm:mx-6">
         <Tab.Group>
           <Tab.List className="w-full flex flex-wrap justify-center gap-2 sm:mx-auto sm:gap-10">
             {reports.map((report, index) => {
@@ -92,7 +92,7 @@ const DetailAuditReportsTab = () => {
                 <Tab key={index} className="outline-none">
                   {({ selected }) => (
                     <div
-                      className={`${selected ? 'border-gray-400' : ''} border py-4 px-4 sm:px-7 xl:px-8 rounded-xl bg-white`}
+                      className={`${selected ? 'border-gray-400' : ''} border py-4 px-4 rounded-xl bg-white sm:px-7 xl:px-8`}
                     >
                       <Image
                         src={`/clients/${report.client.toLowerCase()}.svg`}

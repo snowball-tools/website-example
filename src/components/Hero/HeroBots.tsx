@@ -17,7 +17,7 @@ const HeroBots = () => {
           </div>
         </Link>
       </div>
-      <h1 className="text-center font-bold text-2xl leading-10 sm:text-5xl sm:leading-[70.5px] text-#05051E">
+      <h1 className="text-center font-bold text-2xl text-[#05051e] leading-10 sm:text-5xl sm:leading-[70.5px]">
         Vulnerability Detection <br /> on Demand
       </h1>
       <p className="text-center mt-6">Using our Swarm of 300+ vulnerability detection bots.</p>

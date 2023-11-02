@@ -1,11 +1,9 @@
-import style from './TabConnectors.module.scss';
-
 const TabConnectors = () => {
   return (
-    <div className={`${style['connectors-container']} hidden lg:block`}>
+    <div className={'hidden relative h-[95px] w-[832px] mx-auto -mt-[5px] -z-[1] lg:block'}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`${style['connector']} ${style['connector-1']}`}
+        className={'absolute -z-[1] top-0 left-0'}
         width="412"
         height="81"
         viewBox="0 0 412 81"
@@ -29,7 +27,7 @@ const TabConnectors = () => {
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`${style['connector']} ${style['connector-2']}`}
+        className={'absolute -z-[1] top-0 left-[210px]'}
         width="202"
         height="81"
         viewBox="0 0 202 81"
@@ -53,7 +51,7 @@ const TabConnectors = () => {
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`${style['connector']} ${style['connector-3']} no-gradient`}
+        className={'absolute -z-[1] top-0 left-[410px] no-gradient'}
         width="2"
         height="96"
         viewBox="0 0 2 96"
@@ -70,7 +68,7 @@ const TabConnectors = () => {
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`${style['connector']} ${style['connector-4']}`}
+        className={'absolute -z-[1] top-0 right-[220px]'}
         width="202"
         height="81"
         viewBox="0 0 202 81"
@@ -96,7 +94,7 @@ const TabConnectors = () => {
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`${style['connector']} ${style['connector-5']}`}
+        className={'absolute -z-[1] top-0 right-0'}
         width="422"
         height="81"
         viewBox="0 0 422 81"
