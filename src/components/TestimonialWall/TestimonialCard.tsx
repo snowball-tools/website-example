@@ -12,7 +12,13 @@ const TestimonialCard = ({ data, className }: TestimonialCardProps) => {
       <p className="mb-8 sm:mb-6">“{data.message}”</p>
       <div className="flex gap-3 items-center">
         <div className="">
-          <Image src={`/avatar/${data.avatar}`} alt={data.name} width={32} height={32} />
+          <Image
+            src={`/avatar/${data.avatar}`}
+            alt={data.name}
+            className="rounded-full border border-gray-300"
+            width={32}
+            height={32}
+          />
         </div>
         <div className="flex flex-col text-sm">
           <p className="font-bold">{data.name}</p>

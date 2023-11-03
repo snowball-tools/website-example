@@ -16,7 +16,13 @@ const TestimonialHighlight = () => {
 
         <div className="mt-5 pt-5 flex items-center gap-4">
           <div>
-            <Image src="/avatar/sam-kazemian.png" alt="Sam Kazemian" width={32} height={32} />
+            <Image
+              className="rounded-full border border-gray-300"
+              src="/avatar/sam-kazemian.jpg"
+              alt="Sam Kazemian"
+              width={32}
+              height={32}
+            />
           </div>
           <div>
             <p className="text-sm">

@@ -60,7 +60,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: 'Sam Kazemian',
-    avatar: 'sam-kazemian.png',
+    avatar: 'sam-kazemian.jpg',
     message:
       'Thank you for the great questions, the discussion and the comprehensive preliminary report itself, really liking the approach you and the Macro team have taken.',
     title: 'Founder',
@@ -75,7 +75,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: 'Sam Kazemian',
-    avatar: 'sam-kazemian.png',
+    avatar: 'sam-kazemian.jpg',
     message:
       "I think it's probably obvious but you very clearly outperformed the previous auditors we've worked with! We really enjoyed working with your team!",
     title: 'Founder',
