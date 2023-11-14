@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import { Testimonial } from './TestimonialWall';
+import Image from 'next/image'
+import { Testimonial } from './TestimonialWall'
 
 type TestimonialCardProps = {
-  data: Testimonial;
-  className?: string;
-};
+  data: Testimonial
+  className?: string
+}
 
 const TestimonialCard = ({ data, className }: TestimonialCardProps) => {
   return (
@@ -28,7 +28,7 @@ const TestimonialCard = ({ data, className }: TestimonialCardProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TestimonialCard;
+export default TestimonialCard

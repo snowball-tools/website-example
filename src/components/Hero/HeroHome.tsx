@@ -1,27 +1,36 @@
-'use client';
+'use client'
 
-import React, { useState, useEffect } from 'react';
-import { CtaPrimary } from '../Cta';
-import { TypeAnimation } from 'react-type-animation';
+import React, { useEffect, useState } from 'react'
+import { TypeAnimation } from 'react-type-animation'
+import { CtaPrimary } from '../Cta'
 
 type HeroHomeProps = {
-  handleCtaClick: (e: React.MouseEvent<HTMLElement>) => void;
-};
+  handleCtaClick: (e: React.MouseEvent<HTMLElement>) => void
+}
 
 // Array of contract types to display.
-const contractTypes = ['ZK', 'Bridge', 'DeFi', 'Infrastructure', 'NFTs', 'DAO', 'Social', 'Governance'];
+const contractTypes = [
+  'ZK',
+  'Bridge',
+  'DeFi',
+  'Infrastructure',
+  'NFTs',
+  'DAO',
+  'Social',
+  'Governance',
+]
 
 const getSequence = () => {
-  const sequence: (string | number)[] = [];
+  const sequence: (string | number)[] = []
   contractTypes.forEach((type, index) => {
-    sequence.push(`${type}`);
-    sequence.push(1000);
-  });
-  return sequence;
-};
+    sequence.push(`${type}`)
+    sequence.push(1000)
+  })
+  return sequence
+}
 
 const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState('')
 
   return (
     <div className="mt-10 flex flex-col">
@@ -37,7 +46,7 @@ const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
         Request an Audit
       </CtaPrimary>
     </div>
-  );
-};
+  )
+}
 
-export default HeroHome;
+export default HeroHome

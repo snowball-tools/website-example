@@ -1,3 +1,3 @@
-import TestimonialWall from './TestimonialWall';
+import TestimonialWall from './TestimonialWall'
 
-export default TestimonialWall;
+export default TestimonialWall

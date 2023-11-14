@@ -1,3 +1,3 @@
-import BorderCard from './BorderCard';
+import BorderCard from './BorderCard'
 
-export { BorderCard };
+export { BorderCard }

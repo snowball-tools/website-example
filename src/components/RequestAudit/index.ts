@@ -1,3 +1,3 @@
-import RequestAudit from './RequestAudit';
+import RequestAudit from './RequestAudit'
 
-export default RequestAudit;
+export default RequestAudit

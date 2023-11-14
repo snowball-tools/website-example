@@ -96,7 +96,7 @@ const TabConnectors = () => {
         </defs>
       </svg>
     </div>
-  );
-};
+  )
+}
 
-export default TabConnectors;
+export default TabConnectors

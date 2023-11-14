@@ -1,8 +1,8 @@
-import FeatureCard from './FeatureCard';
-import NewDetectors from './features/NewDetectors';
-import ProprietaryDetectors from './features/ProprietaryDetectors';
-import RealTimeReports from './features/RealTimeReports';
-import VerifiedByAuthor from './features/VerifiedByAuthor';
+import FeatureCard from './FeatureCard'
+import NewDetectors from './features/NewDetectors'
+import ProprietaryDetectors from './features/ProprietaryDetectors'
+import RealTimeReports from './features/RealTimeReports'
+import VerifiedByAuthor from './features/VerifiedByAuthor'
 
 const BotsFeatures = () => {
   return (
@@ -40,7 +40,7 @@ const BotsFeatures = () => {
         <VerifiedByAuthor className="pb-4" />
       </FeatureCard>
     </div>
-  );
-};
+  )
+}
 
-export default BotsFeatures;
+export default BotsFeatures

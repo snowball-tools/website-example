@@ -1,3 +1,3 @@
-import ShortAuditReportsTab from './ShortAuditReportTab';
+import ShortAuditReportsTab from './ShortAuditReportTab'
 
-export default ShortAuditReportsTab;
+export default ShortAuditReportsTab

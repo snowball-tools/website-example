@@ -1,18 +1,18 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import { Disclosure } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Audits', href: '/', current: true },
   { name: 'Bots', href: '/bots', current: false },
   { name: 'Audit Library', href: 'https://0xmacro.com/library', current: false, newTab: true },
   { name: 'Blog', href: 'https://0xmacro.com/blog/', current: false, newTab: true },
-];
+]
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(' ')
 }
 
 function getNavItems() {
@@ -22,7 +22,7 @@ function getNavItems() {
         href={item.href}
         className={classNames(
           item.current ? '' : 'text-black',
-          'block px-3 py-2 text-lg hover:text-black transition-colors duration-300 sm:text-base'
+          'block px-3 py-2 text-lg hover:text-black transition-colors duration-300 sm:text-base',
         )}
         aria-current={item.current ? 'page' : undefined}
         target={item.newTab ? '_blank' : undefined}
@@ -30,7 +30,7 @@ function getNavItems() {
         {item.name}
       </Link>
     </Disclosure.Button>
-  ));
+  ))
 }
 
 const Nav = () => {
@@ -61,7 +61,7 @@ const Nav = () => {
         </>
       )}
     </Disclosure>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
 
 const renderSocialLinks = () => {
   return (
@@ -20,8 +20,8 @@ const renderSocialLinks = () => {
         </Link>
       </li>
     </>
-  );
-};
+  )
+}
 
 const Footer = () => {
   return (
@@ -30,7 +30,14 @@ const Footer = () => {
         <div className="lg:flex lg:justify-between">
           <div className="mb-10">
             <Link href="/">
-              <Image className="mb-6" src="/macro.svg" alt="Macro Logo" width={140} height={37} priority />
+              <Image
+                className="mb-6"
+                src="/macro.svg"
+                alt="Macro Logo"
+                width={140}
+                height={37}
+                priority
+              />
             </Link>
 
             <p className="w-full flex gap-1 font-mono font-light mb-5 text-gray-600 text-sm">
@@ -82,10 +89,12 @@ const Footer = () => {
         </div>
 
         <ul className="flex gap-6 mb-10 sm:hidden">{renderSocialLinks()}</ul>
-        <div className="text-gray-600 text-sm">© {new Date().getFullYear()} 0xMacro. All rights reserved.</div>
+        <div className="text-gray-600 text-sm">
+          © {new Date().getFullYear()} 0xMacro. All rights reserved.
+        </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

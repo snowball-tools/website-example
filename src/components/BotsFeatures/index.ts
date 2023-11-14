@@ -1,3 +1,3 @@
-import BotsFeatures from './BotsFeatures';
+import BotsFeatures from './BotsFeatures'
 
-export default BotsFeatures;
+export default BotsFeatures

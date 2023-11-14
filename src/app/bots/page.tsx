@@ -1,10 +1,10 @@
-import { HeroBots } from '@/components/Hero';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import StandaloneHeading from '@/components/StandaloneHeading';
-import TestimonialWall from '@/components/TestimonialWall';
-import PriceTable from '@/components/PriceTable';
-import BotsFeatures from '@/components/BotsFeatures';
+import BotsFeatures from '@/components/BotsFeatures'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import { HeroBots } from '@/components/Hero'
+import PriceTable from '@/components/PriceTable'
+import StandaloneHeading from '@/components/StandaloneHeading'
+import TestimonialWall from '@/components/TestimonialWall'
 
 export default function Bots() {
   return (
@@ -20,5 +20,5 @@ export default function Bots() {
       <TestimonialWall />
       <Footer />
     </main>
-  );
+  )
 }

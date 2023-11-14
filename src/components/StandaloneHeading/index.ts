@@ -1,3 +1,3 @@
-import StandaloneHeading from './StandaloneHeading';
+import StandaloneHeading from './StandaloneHeading'
 
-export default StandaloneHeading;
+export default StandaloneHeading

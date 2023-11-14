@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { CtaPrimary } from '../Cta';
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
+import Link from 'next/link'
+import { CtaPrimary } from '../Cta'
 
 const HeroBots = () => {
   return (
@@ -22,16 +22,24 @@ const HeroBots = () => {
       </h1>
       <p className="text-center mt-6">Using our Swarm of 300+ vulnerability detection bots.</p>
       <div className="flex flex-col mx-auto mt-10 items-center gap-6 sm:flex-row">
-        <CtaPrimary className="flex gap-2" href="https://swarm.0xmacro.com/" icon="/icons/github.svg" border>
+        <CtaPrimary
+          className="flex gap-2"
+          href="https://swarm.0xmacro.com/"
+          icon="/icons/github.svg"
+          border
+        >
           Try it with a Free Scan
         </CtaPrimary>
-        <Link className="flex gap-2 font-semibold items-center hover:underline" href="https://swarm.0xmacro.com/">
+        <Link
+          className="flex gap-2 font-semibold items-center hover:underline"
+          href="https://swarm.0xmacro.com/"
+        >
           Check Pricing
           <ArrowUpRightIcon className="w-3 h-3" />
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HeroBots;
+export default HeroBots

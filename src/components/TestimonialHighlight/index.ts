@@ -1,3 +1,3 @@
-import TestimonialHighlight from './TestimonialHighlight';
+import TestimonialHighlight from './TestimonialHighlight'
 
-export default TestimonialHighlight;
+export default TestimonialHighlight

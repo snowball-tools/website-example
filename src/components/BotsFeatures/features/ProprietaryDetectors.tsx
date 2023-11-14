@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 type ProprietaryDetectorsProps = {
-  className?: string;
-};
+  className?: string
+}
 
 const ProprietaryDetectors = ({ className }: ProprietaryDetectorsProps) => {
   return (
@@ -13,7 +13,7 @@ const ProprietaryDetectors = ({ className }: ProprietaryDetectorsProps) => {
       width={500}
       height={500}
     />
-  );
-};
+  )
+}
 
-export default ProprietaryDetectors;
+export default ProprietaryDetectors

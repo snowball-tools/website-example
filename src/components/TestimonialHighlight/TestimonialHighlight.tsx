@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 const TestimonialHighlight = () => {
   return (
@@ -9,8 +9,8 @@ const TestimonialHighlight = () => {
             “Macro engineers are personable, professional, and experienced.”
           </p>
           <p className="text-gray-600">
-            Macro&apos;s auditing helps us be more confident that our code deployments meet our security standards. Macro
-            engineers are personable, professional, and experienced.
+            Macro&apos;s auditing helps us be more confident that our code deployments meet our
+            security standards. Macro engineers are personable, professional, and experienced.
           </p>
         </blockquote>
 
@@ -26,10 +26,17 @@ const TestimonialHighlight = () => {
           </div>
           <div>
             <p className="text-sm">
-              <span className="font-bold">Sam Kazemian</span> <span className="hidden text-gray-400 sm:inline">|</span>{' '}
+              <span className="font-bold">Sam Kazemian</span>{' '}
+              <span className="hidden text-gray-400 sm:inline">|</span>{' '}
               <span className="font-mono font-light block sm:inline">Founder, Frax Finance</span>
             </p>
-            <Image className="mt-2" src="/clients/frax.svg" alt="Frax Finance" width={50} height={37} />
+            <Image
+              className="mt-2"
+              src="/clients/frax.svg"
+              alt="Frax Finance"
+              width={50}
+              height={37}
+            />
           </div>
         </div>
       </div>
@@ -43,7 +50,7 @@ const TestimonialHighlight = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default TestimonialHighlight;
+export default TestimonialHighlight

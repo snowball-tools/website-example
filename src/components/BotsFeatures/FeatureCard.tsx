@@ -1,12 +1,12 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 type FeatureCardProps = {
-  icon: string;
-  title: string;
-  description: string;
-  children: React.ReactNode;
-  collapse?: boolean;
-};
+  icon: string
+  title: string
+  description: string
+  children: React.ReactNode
+  collapse?: boolean
+}
 
 const FeatureCard = ({ children, icon, title, description, collapse }: FeatureCardProps) => {
   return (
@@ -21,7 +21,7 @@ const FeatureCard = ({ children, icon, title, description, collapse }: FeatureCa
 
       <div className={collapse ? '' : 'p-6'}>{children}</div>
     </section>
-  );
-};
+  )
+}
 
-export default FeatureCard;
+export default FeatureCard

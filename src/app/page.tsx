@@ -1,22 +1,22 @@
-'use client';
+'use client'
 
-import { useRef } from 'react';
-import { HeroHome } from '@/components/Hero';
-import Header from '../components/Header';
-import DetailAuditReportsTab from '@/components/DetailAuditReportsTab';
-import Footer from '@/components/Footer';
-import RequestAudit from '@/components/RequestAudit';
-import TestimonialHighlight from '@/components/TestimonialHighlight';
-import TestimonialWall from '@/components/TestimonialWall';
-import StandaloneHeading from '@/components/StandaloneHeading';
+import DetailAuditReportsTab from '@/components/DetailAuditReportsTab'
+import Footer from '@/components/Footer'
+import { HeroHome } from '@/components/Hero'
+import RequestAudit from '@/components/RequestAudit'
+import StandaloneHeading from '@/components/StandaloneHeading'
+import TestimonialHighlight from '@/components/TestimonialHighlight'
+import TestimonialWall from '@/components/TestimonialWall'
+import { useRef } from 'react'
+import Header from '../components/Header'
 
 export default function Home() {
-  const auditForm = useRef<HTMLElement | null>(null);
+  const auditForm = useRef<HTMLElement | null>(null)
 
   const handleCtaClick = (e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault();
-    auditForm.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+    e.preventDefault()
+    auditForm.current?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <main className="">
@@ -31,5 +31,5 @@ export default function Home() {
       <RequestAudit auditForm={auditForm} />
       <Footer />
     </main>
-  );
+  )
 }

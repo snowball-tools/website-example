@@ -1,10 +1,10 @@
-import { BorderCard } from '../Card';
-import { SummaryReport } from './ShortAuditReportTab';
-import { CtaExternalPage } from '../Cta';
+import { BorderCard } from '../Card'
+import { CtaExternalPage } from '../Cta'
+import { SummaryReport } from './ShortAuditReportTab'
 
 type ShortAuditReportProps = {
-  data: SummaryReport;
-};
+  data: SummaryReport
+}
 
 const ShortAuditReport = ({ data }: ShortAuditReportProps) => {
   return (
@@ -18,7 +18,7 @@ const ShortAuditReport = ({ data }: ShortAuditReportProps) => {
 
       <CtaExternalPage href={data.reportUrl}>View Report</CtaExternalPage>
     </BorderCard>
-  );
-};
+  )
+}
 
-export default ShortAuditReport;
+export default ShortAuditReport

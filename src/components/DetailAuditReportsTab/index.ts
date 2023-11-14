@@ -1,3 +1,3 @@
-import DetailAuditReportsTab from './DetailAuditReportsTab';
+import DetailAuditReportsTab from './DetailAuditReportsTab'
 
-export default DetailAuditReportsTab;
+export default DetailAuditReportsTab

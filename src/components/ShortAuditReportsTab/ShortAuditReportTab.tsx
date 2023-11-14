@@ -1,16 +1,16 @@
-import { Tab } from '@headlessui/react';
-import ShortAuditReport from './ShortAuditReport';
-import Image from 'next/image';
-import TabConnectors from './TabConnectors';
+import { Tab } from '@headlessui/react'
+import Image from 'next/image'
+import ShortAuditReport from './ShortAuditReport'
+import TabConnectors from './TabConnectors'
 
 export type SummaryReport = {
-  client: string;
-  reportName: string;
-  releaseDate: string;
-  version: string;
-  presentedBy: string;
-  reportUrl: string;
-};
+  client: string
+  reportName: string
+  releaseDate: string
+  version: string
+  presentedBy: string
+  reportUrl: string
+}
 
 const reports: SummaryReport[] = [
   {
@@ -37,7 +37,7 @@ const reports: SummaryReport[] = [
     presentedBy: '0xMacro',
     reportUrl: 'https://0xmacro.com/library/audits/thirdweb-6',
   },
-];
+]
 
 const ShortAuditReportsTab = () => {
   return (
@@ -48,7 +48,7 @@ const ShortAuditReportsTab = () => {
             <Tab.Panel key={index} className="mt-10 lg:-mt-5">
               <ShortAuditReport data={report} />
             </Tab.Panel>
-          );
+          )
         })}
       </Tab.Panels>
 
@@ -59,7 +59,11 @@ const ShortAuditReportsTab = () => {
           return (
             <Tab key={index} className="outline-none">
               {({ selected }) => (
-                <div className={`${selected ? 'border-gray-400' : ''} border py-3 px-2 rounded-xl bg-white sm:px-4 lg:px-6`}>
+                <div
+                  className={`${
+                    selected ? 'border-gray-400' : ''
+                  } border py-3 px-2 rounded-xl bg-white sm:px-4 lg:px-6`}
+                >
                   <Image
                     src={`/clients/${report.client.toLowerCase()}.svg`}
                     alt={`${report.client} Logo`}
@@ -70,11 +74,11 @@ const ShortAuditReportsTab = () => {
                 </div>
               )}
             </Tab>
-          );
+          )
         })}
       </Tab.List>
     </Tab.Group>
-  );
-};
+  )
+}
 
-export default ShortAuditReportsTab;
+export default ShortAuditReportsTab

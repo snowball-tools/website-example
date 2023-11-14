@@ -1,5 +1,5 @@
-import CtaPrimary from './CtaPrimary';
-import CtaSecondary from './CtaSecondary';
-import CtaExternalPage from './CtaExternalPage';
+import CtaExternalPage from './CtaExternalPage'
+import CtaPrimary from './CtaPrimary'
+import CtaSecondary from './CtaSecondary'
 
-export { CtaPrimary, CtaSecondary, CtaExternalPage };
+export { CtaPrimary, CtaSecondary, CtaExternalPage }

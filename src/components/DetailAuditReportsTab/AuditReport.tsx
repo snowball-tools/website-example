@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import { Report } from './DetailAuditReportsTab';
-import { BorderCard } from '../Card';
+import Image from 'next/image'
+import { BorderCard } from '../Card'
+import { Report } from './DetailAuditReportsTab'
 
 type AuditReportProps = {
-  data: Report;
-};
+  data: Report
+}
 
 const bgClassMap: Record<string, string> = {
   Critical: 'bg-critical',
@@ -13,7 +13,7 @@ const bgClassMap: Record<string, string> = {
   Low: 'bg-low',
   'Code Quality': 'bg-codeQuality',
   'Gas Optimization': 'bg-gasOptimization',
-};
+}
 
 const AuditReport = ({ data }: AuditReportProps) => {
   return (
@@ -42,17 +42,21 @@ const AuditReport = ({ data }: AuditReportProps) => {
           {data.findings.map((finding, index) => {
             return (
               <div key={index} className="flex w-full items-center h-10 sm:w-1/2 ">
-                <p className={`${bgClassMap[finding.type]} inline-block py-0.5 px-2 rounded-lg mr-2 text-white`}>
+                <p
+                  className={`${
+                    bgClassMap[finding.type]
+                  } inline-block py-0.5 px-2 rounded-lg mr-2 text-white`}
+                >
                   {finding.quantity}
                 </p>
                 <p className="">{finding.type}</p>
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </BorderCard>
-  );
-};
+  )
+}
 
-export default AuditReport;
+export default AuditReport

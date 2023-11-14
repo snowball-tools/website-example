@@ -1,3 +1,3 @@
-import PriceTable from './PriceTable';
+import PriceTable from './PriceTable'
 
-export default PriceTable;
+export default PriceTable

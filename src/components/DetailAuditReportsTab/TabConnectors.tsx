@@ -18,7 +18,14 @@ const TabConnectors = () => {
           strokeLinejoin="round"
         />
         <defs>
-          <linearGradient id="paint0_linear_511_6141" x1="206" y1="1" x2="206" y2="80" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="paint0_linear_511_6141"
+            x1="206"
+            y1="1"
+            x2="206"
+            y2="80"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#FFA2D4" />
             <stop offset="1" stopColor="#AEC9FF" />
           </linearGradient>
@@ -42,7 +49,14 @@ const TabConnectors = () => {
           strokeLinejoin="round"
         />
         <defs>
-          <linearGradient id="paint0_linear_511_6139" x1="101" y1="1" x2="101" y2="80" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="paint0_linear_511_6139"
+            x1="101"
+            y1="1"
+            x2="101"
+            y2="80"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#FEB645" />
             <stop offset="1" stopColor="#AACAFF" />
           </linearGradient>
@@ -57,9 +71,23 @@ const TabConnectors = () => {
         viewBox="0 0 2 96"
         fill="none"
       >
-        <path opacity="0.2" d="M1 1V95" stroke="#E16AFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          opacity="0.2"
+          d="M1 1V95"
+          stroke="#E16AFF"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
-          <linearGradient id="paint0_linear_511_6137" x1="1.5" y1="1" x2="1.5" y2="95" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="paint0_linear_511_6137"
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="95"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#FFA96A" />
             <stop offset="1" stopColor="#E16AFF" />
           </linearGradient>
@@ -85,7 +113,14 @@ const TabConnectors = () => {
           />
         </g>
         <defs>
-          <linearGradient id="paint0_linear_511_6139" x1="101" y1="1" x2="101" y2="80" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="paint0_linear_511_6139"
+            x1="101"
+            y1="1"
+            x2="101"
+            y2="80"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#FEB645" />
             <stop offset="1" stopColor="#AACAFF" />
           </linearGradient>
@@ -109,14 +144,21 @@ const TabConnectors = () => {
           strokeLinejoin="round"
         />
         <defs>
-          <linearGradient id="paint0_linear_511_6140" x1="211" y1="1" x2="211" y2="80" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="paint0_linear_511_6140"
+            x1="211"
+            y1="1"
+            x2="211"
+            y2="80"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#FFA967" />
             <stop offset="1" stopColor="#F3B1F5" />
           </linearGradient>
         </defs>
       </svg>
     </div>
-  );
-};
+  )
+}
 
-export default TabConnectors;
+export default TabConnectors

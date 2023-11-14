@@ -1,15 +1,15 @@
-'use client';
+'use client'
 
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import TestimonialCard from './TestimonialCard';
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import TestimonialCard from './TestimonialCard'
 
 export type Testimonial = {
-  name: string;
-  avatar: string;
-  message: string;
-  title: string;
-  company: string;
-};
+  name: string
+  avatar: string
+  message: string
+  title: string
+  company: string
+}
 
 const testimonials: Testimonial[] = [
   {
@@ -69,7 +69,8 @@ const testimonials: Testimonial[] = [
   {
     name: 'Fleet Commander',
     avatar: 'fleet-commander.png',
-    message: "We've worked with a lot of auditors. Macro is by far the best, it's not even comparable.",
+    message:
+      "We've worked with a lot of auditors. Macro is by far the best, it's not even comparable.",
     title: 'Co-Founder',
     company: 'The Citadel Game',
   },
@@ -88,7 +89,7 @@ const testimonials: Testimonial[] = [
     title: 'CTO',
     company: 'Tellor',
   },
-];
+]
 
 const TestimonialWall = () => {
   return (
@@ -96,12 +97,14 @@ const TestimonialWall = () => {
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 640: 2, 768: 3 }}>
         <Masonry columnsCount={3} gutter={'20px'}>
           {testimonials.map((testimonial, index) => {
-            return <TestimonialCard key={index} data={testimonial} className="max-w-[280px] mx-auto" />;
+            return (
+              <TestimonialCard key={index} data={testimonial} className="max-w-[280px] mx-auto" />
+            )
           })}
         </Masonry>
       </ResponsiveMasonry>
     </section>
-  );
-};
+  )
+}
 
-export default TestimonialWall;
+export default TestimonialWall

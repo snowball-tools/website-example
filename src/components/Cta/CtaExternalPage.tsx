@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/image'
+import Link from 'next/link'
 
 interface CtaExternalPageProps {
-  className?: string;
-  children: React.ReactNode;
-  href: string;
+  className?: string
+  children: React.ReactNode
+  href: string
 }
 
 const CtaExternalPage = ({ className, children, href }: CtaExternalPageProps) => {
@@ -17,7 +17,7 @@ const CtaExternalPage = ({ className, children, href }: CtaExternalPageProps) =>
       <p>{children}</p>
       <Image src="/icons/external-link.svg" alt="External Link" width={20} height={20} />
     </Link>
-  );
-};
+  )
+}
 
-export default CtaExternalPage;
+export default CtaExternalPage

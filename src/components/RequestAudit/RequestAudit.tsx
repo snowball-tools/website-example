@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { Widget } from '@typeform/embed-react';
+import { Widget } from '@typeform/embed-react'
+import Link from 'next/link'
 
 type RequestAuditProps = {
-  auditForm: React.RefObject<HTMLElement>;
-};
+  auditForm: React.RefObject<HTMLElement>
+}
 
 const RequestAudit = ({ auditForm }: RequestAuditProps) => {
   return (
@@ -13,9 +13,13 @@ const RequestAudit = ({ auditForm }: RequestAuditProps) => {
           Request an <span className="gradient-text">Audit!</span>
         </h1>
         <p className="mx-auto sm:max-w-[400px]">
-          We respond fast! Fill out the form below and our team will reach out to you within 24 hours. You can chat directly
-          with us on{' '}
-          <Link className="underline underline-offset-2" href="https://t.me/haileybf" target="_blank">
+          We respond fast! Fill out the form below and our team will reach out to you within 24
+          hours. You can chat directly with us on{' '}
+          <Link
+            className="underline underline-offset-2"
+            href="https://t.me/haileybf"
+            target="_blank"
+          >
             Telegram!
           </Link>
         </p>
@@ -29,7 +33,7 @@ const RequestAudit = ({ auditForm }: RequestAuditProps) => {
         inlineOnMobile
       />
     </section>
-  );
-};
+  )
+}
 
-export default RequestAudit;
+export default RequestAudit

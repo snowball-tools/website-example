@@ -1,21 +1,21 @@
-'use client';
+'use client'
 
-import { Tab } from '@headlessui/react';
-import AuditReport from './AuditReport';
-import Image from 'next/image';
-import TabConnectors from './TabConnectors';
+import { Tab } from '@headlessui/react'
+import Image from 'next/image'
+import AuditReport from './AuditReport'
+import TabConnectors from './TabConnectors'
 
 export type ReportFinding = {
-  type: string;
-  quantity: number;
-};
+  type: string
+  quantity: number
+}
 
 export type Report = {
-  client: string;
-  releaseDate: string;
-  description: string;
-  findings: ReportFinding[];
-};
+  client: string
+  releaseDate: string
+  description: string
+  findings: ReportFinding[]
+}
 
 const reports: Report[] = [
   {
@@ -75,13 +75,14 @@ const reports: Report[] = [
       { type: 'Gas Optimization', quantity: 6 },
     ],
   },
-];
+]
 
 const DetailAuditReportsTab = () => {
   return (
     <div className="mt-16 mb-16">
       <p className="text-center">
-        Work with you soon-to-be <span className="gradient-text block sm:inline">favorite Auditors.</span>
+        Work with you soon-to-be{' '}
+        <span className="gradient-text block sm:inline">favorite Auditors.</span>
       </p>
 
       <div className="mx-2 mt-16 sm:mx-6">
@@ -92,7 +93,9 @@ const DetailAuditReportsTab = () => {
                 <Tab key={index} className="outline-none">
                   {({ selected }) => (
                     <div
-                      className={`${selected ? 'border-gray-400' : ''} border py-4 px-4 rounded-xl bg-white sm:px-7 xl:px-8`}
+                      className={`${
+                        selected ? 'border-gray-400' : ''
+                      } border py-4 px-4 rounded-xl bg-white sm:px-7 xl:px-8`}
                     >
                       <Image
                         src={`/clients/${report.client.toLowerCase()}.svg`}
@@ -104,7 +107,7 @@ const DetailAuditReportsTab = () => {
                     </div>
                   )}
                 </Tab>
-              );
+              )
             })}
           </Tab.List>
           <TabConnectors />
@@ -114,13 +117,13 @@ const DetailAuditReportsTab = () => {
                 <Tab.Panel key={index} className="mt-10 lg:-mt-5">
                   <AuditReport data={report} />
                 </Tab.Panel>
-              );
+              )
             })}
           </Tab.Panels>
         </Tab.Group>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DetailAuditReportsTab;
+export default DetailAuditReportsTab
