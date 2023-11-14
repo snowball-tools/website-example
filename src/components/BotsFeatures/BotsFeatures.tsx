@@ -21,7 +21,7 @@ const BotsFeatures = () => {
         description="Audit reports are generated and delivered in real-time."
         collapse
       >
-        <RealTimeReports className="mx-2 mb-6" />
+        <RealTimeReports className="mx-6 sm:mx-8" />
       </FeatureCard>
       <FeatureCard
         icon="/icons/calendar.svg"
