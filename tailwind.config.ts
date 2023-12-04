@@ -18,6 +18,7 @@ const config: Config = {
       colors: {
         sunriseOrange: '#feb34c',
         coralPink: '#ff9f93',
+        electricPurple: '#ba2fd2',
         skyBlue: '#b0c8ff',
         critical: '#9f2121',
         high: '#b2450d',

@@ -22,7 +22,7 @@ function getNavItems() {
         href={item.href}
         className={classNames(
           item.current ? '' : 'text-black',
-          'block px-3 py-2 text-lg hover:text-black transition-colors duration-300 sm:text-base',
+          'block px-3 py-2 text-lg hover:text-black transition-colors duration-300 md:text-sm lg:text-base',
         )}
         aria-current={item.current ? 'page' : undefined}
         target={item.newTab ? '_blank' : undefined}
@@ -51,7 +51,7 @@ const Nav = () => {
             </div>
 
             <div className="hidden md:block">
-              <ul className="flex space-x-4">{getNavItems()}</ul>
+              <ul className="flex space-x-1 lg:space-x-4">{getNavItems()}</ul>
             </div>
 
             <Disclosure.Panel className="absolute z-10 top-[58px] left-0 right-0 md:hidden">
