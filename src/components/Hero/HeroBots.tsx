@@ -28,6 +28,15 @@ const HeroBots = () => {
       <p className="text-center mt-6 text-xl text-gray-500">
         Using our Swarm of 300+ vulnerability detection bots.
       </p>
+      <p className="text-center text-gray-500 mt-6 lg:mt-8">
+        Already have an account?{' '}
+        <Link
+          className="text-electricPurple hover:underline block md:inline"
+          href="https://swarm.0xmacro.com/signup"
+        >
+          Sign In to Swarm
+        </Link>
+      </p>
 
       <div className="mt-8 mx-auto w-full max-w-xl relative">
         <form

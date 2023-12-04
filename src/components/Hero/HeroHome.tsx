@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { CtaPrimary } from '../Cta'
@@ -45,6 +46,15 @@ const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
       <CtaPrimary onClick={handleCtaClick} className="mx-auto mt-10" href="#" border>
         Request an Audit
       </CtaPrimary>
+      <p className="text-center text-gray-500 mt-6 text-sm lg:mt-8">
+        Already have an account?{' '}
+        <Link
+          className="text-electricPurple hover:underline block md:inline"
+          href="https://swarm.0xmacro.com/signup"
+        >
+          Sign In to Swarm
+        </Link>
+      </p>
     </div>
   )
 }
