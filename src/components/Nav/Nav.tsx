@@ -17,11 +17,7 @@ function getNavItems(currentPath: string) {
     <Disclosure.Button key={item.name} as="li">
       <Link
         href={item.href}
-<<<<<<< HEAD
         className={'block px-3 py-2 text-lg transition-colors duration-300 md:text-sm lg:text-base'}
-=======
-        className={'block px-3 py-2 text-lg transition-colors duration-300 sm:text-base'}
->>>>>>> 6a7d49e (fix: move active style to inline text wrapper to fix mobile issue)
         aria-current={currentPath === item.href ? 'page' : undefined}
         target={item.newTab ? '_blank' : undefined}
       >
