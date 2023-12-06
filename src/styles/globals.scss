@@ -12,6 +12,10 @@
   -webkit-background-clip: text;
 }
 
+.gradient-background {
+  background: var(--gradient, linear-gradient(90deg, #cab7ff 0%, #fe8bbb 50%, #ffbd7a 100%));
+}
+
 .triple-border {
   position: relative;
   border-radius: 17px;
@@ -42,4 +46,29 @@
   z-index: -2;
   border: 5px solid #fbfaff;
   border-radius: 28px;
+}
+
+.fancy-icon {
+  @apply relative;
+}
+
+.fancy-icon::before,
+.fancy-icon::after {
+  @apply absolute block h-full w-full rounded-2xl border;
+  content: '';
+  top: 0;
+  left: 0;
+}
+
+.fancy-icon::before {
+  transform: scale(1.1);
+}
+
+.fancy-icon::after {
+  transform: scale(1.2);
+}
+
+.dark .fancy-icon::before,
+.dark .fancy-icon::after {
+  @apply border-gray-800;
 }
