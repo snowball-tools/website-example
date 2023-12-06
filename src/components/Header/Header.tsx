@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { CtaSecondary } from '../Cta'
 import Nav from '../Nav'
 
@@ -8,6 +11,8 @@ type HeaderProps = {
 }
 
 const Header = ({ handleCtaClick }: HeaderProps) => {
+  const currentPath = usePathname()
+
   return (
     <>
       <header className="relative p-2 flex justify-between max-w-5xl mx-auto items-center sm:p-4">
@@ -22,7 +27,7 @@ const Header = ({ handleCtaClick }: HeaderProps) => {
               priority
             />
           </Link>
-          <Nav />
+          <Nav currentPath={currentPath} />
         </div>
         <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-7">
           <Link

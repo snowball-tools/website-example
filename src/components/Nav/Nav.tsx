@@ -1,9 +1,6 @@
-'use client'
-
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 const navigation = [
   { name: 'Audits', href: '/' },
@@ -11,6 +8,10 @@ const navigation = [
   { name: 'Audit Library', href: 'https://0xmacro.com/library', newTab: true },
   { name: 'Blog', href: 'https://0xmacro.com/blog/', newTab: true },
 ]
+
+type NavProps = {
+  currentPath: string
+}
 
 function getNavItems(currentPath: string) {
   return navigation.map((item) => (
@@ -29,9 +30,7 @@ function getNavItems(currentPath: string) {
   ))
 }
 
-const Nav = () => {
-  const currentPath = usePathname()
-
+const Nav = ({ currentPath }: NavProps) => {
   return (
     <Disclosure as="nav">
       {({ open }) => (
