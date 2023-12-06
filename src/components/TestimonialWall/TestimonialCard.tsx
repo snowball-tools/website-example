@@ -8,8 +8,9 @@ type TestimonialCardProps = {
 
 const TestimonialCard = ({ data, className }: TestimonialCardProps) => {
   return (
-    <div className={`${className} border p-6 rounded-3xl bg-white`}>
-      <p className="mb-8 sm:mb-6">“{data.message}”</p>
+    <div
+      className={`${className} border p-6 rounded-3xl bg-white dark:bg-darkNavy-100 dark:border-gray-800`}
+    >
       <div className="flex gap-3 items-center">
         <div className="">
           <Image
@@ -22,7 +23,7 @@ const TestimonialCard = ({ data, className }: TestimonialCardProps) => {
         </div>
         <div className="flex flex-col text-sm">
           <p className="font-bold">{data.name}</p>
-          <p className="font-mono font-light">
+          <p className="font-mono font-light dark:text-gray-500">
             {data.title}, {data.company}
           </p>
         </div>
