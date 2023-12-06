@@ -1,5 +1,7 @@
+import useTheme from '@/hooks/useTheme'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import DiscordIcon from '../icons/Discord'
 import HammerIcon from '../icons/Hammer'
 import TwitterIcon from '../icons/Twitter'
@@ -28,15 +30,18 @@ const renderSocialLinks = () => {
 }
 
 const Footer = () => {
+  const currentPath = usePathname()
+  const theme = useTheme()
+
   return (
     <>
-      <footer className="bg-[#8989D30D] px-6 py-6 m-2 rounded-3xl sm:px-12 sm:py-12 lg:max-w-5xl lg:mx-auto lg:mb-10">
+      <footer className="bg-[#8989D30D] dark:bg-darkNavy-300 px-6 py-6 m-2 rounded-3xl sm:px-12 sm:py-12 lg:max-w-5xl lg:mx-auto lg:mb-10">
         <div className="lg:flex lg:justify-between">
           <div className="mb-10">
             <Link href="/">
               <Image
                 className="mb-6"
-                src="/macro.svg"
+                src={theme === 'dark' ? '/macro-dark.svg' : '/macro.svg'}
                 alt="Macro Logo"
                 width={140}
                 height={37}
@@ -44,7 +49,7 @@ const Footer = () => {
               />
             </Link>
 
-            <p className="w-full flex gap-1 font-mono font-light mb-5 text-gray-600 text-sm">
+            <p className="w-full flex gap-1 font-mono font-light mb-5 text-gray-600 dark:text-white text-sm">
               Helping Web3 builders build.
               <HammerIcon className="h-4 w-4 mt-[2px]" />
             </p>
@@ -55,7 +60,7 @@ const Footer = () => {
           <div className="flex gap-8 text-base flex-col mb-10 sm:flex-row sm:gap-20">
             <div>
               <h3 className="mb-5 font-semibold uppercase">Company</h3>
-              <ul className="flex flex-col gap-4 text-gray-600">
+              <ul className="flex flex-col gap-4 text-gray-600 dark:text-white dark:opacity-70">
                 <li>
                   <Link href="/">Audits</Link>
                 </li>
@@ -77,7 +82,7 @@ const Footer = () => {
 
             <div>
               <h3 className="mb-5 font-semibold uppercase">Legal</h3>
-              <ul className="flex flex-col gap-4 text-gray-600">
+              <ul className="flex flex-col gap-4 text-gray-600 dark:text-white dark:opacity-70">
                 <li>
                   <Link href="#">Privacy Policy</Link>
                 </li>
@@ -93,7 +98,7 @@ const Footer = () => {
         </div>
 
         <ul className="flex gap-6 mb-10 sm:hidden">{renderSocialLinks()}</ul>
-        <div className="text-gray-600 text-sm">
+        <div className="text-gray-600 dark:text-white dark:opacity-70 text-sm">
           © {new Date().getFullYear()} 0xMacro. All rights reserved.
         </div>
       </footer>
