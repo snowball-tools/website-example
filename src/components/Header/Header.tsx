@@ -1,5 +1,6 @@
 'use client'
 
+import useTheme from '@/hooks/useTheme'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -12,6 +13,7 @@ type HeaderProps = {
 
 const Header = ({ handleCtaClick }: HeaderProps) => {
   const currentPath = usePathname()
+  const theme = useTheme()
 
   return (
     <>
@@ -20,7 +22,7 @@ const Header = ({ handleCtaClick }: HeaderProps) => {
           <Link href="/">
             <Image
               className="w-[100px]"
-              src="/macro.svg"
+              src={theme === 'dark' ? '/macro-dark.svg' : '/macro.svg'}
               alt="Macro Logo"
               width={180}
               height={37}
