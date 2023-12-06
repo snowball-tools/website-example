@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 const navigation = [
   { name: 'Audits', href: '/' },
-  { name: 'Bots', href: '/bots' },
   { name: 'Gas Blaster', href: '/gas-blaster' },
   { name: 'Audit Library', href: 'https://0xmacro.com/library', newTab: true },
   { name: 'Blog', href: 'https://0xmacro.com/blog/', newTab: true },
