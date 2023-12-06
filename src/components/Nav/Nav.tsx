@@ -25,7 +25,7 @@ function getNavItems(currentPath: string) {
       >
         <span
           className={
-            currentPath === item.href ? 'gradient-text font-semibold' : 'text-black dark:text-white'
+            currentPath === item.href ? 'text-electricPurple' : 'text-black dark:text-white'
           }
         >
           {item.name}
