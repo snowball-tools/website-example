@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import DiscordIcon from '../icons/Discord'
+import HammerIcon from '../icons/Hammer'
 import TwitterIcon from '../icons/Twitter'
 import YouTubeIcon from '../icons/YouTube'
 
@@ -45,7 +46,7 @@ const Footer = () => {
 
             <p className="w-full flex gap-1 font-mono font-light mb-5 text-gray-600 text-sm">
               Helping Web3 builders build.
-              <Image className="" src="/icons/hammer.svg" alt="Hammer" width={16} height={16} />
+              <HammerIcon className="h-4 w-4 mt-[2px]" />
             </p>
 
             <ul className="hidden sm:flex sm:gap-6">{renderSocialLinks()}</ul>
