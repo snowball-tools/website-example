@@ -16,6 +16,7 @@ const config: Config = {
       backgroundImage: {
         'hero-pattern': "url('/misc/hero-pattern.svg')",
         'hero-pattern-dark': "url('/misc/hero-pattern-dark.svg')",
+        'dots-pattern-dark': "url('/misc/dots-pattern-dark.svg')",
       },
       colors: {
         sunriseOrange: '#feb34c',
