@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import style from './Cta.module.scss'
 
 interface CtaProps {
   className?: string
@@ -10,7 +9,13 @@ interface CtaProps {
 
 const CtaSecondary = ({ className, children, href, onClick }: CtaProps) => {
   return (
-    <Link onClick={onClick} className={`${className} ${style['cta-secondary']}`} href={href}>
+    <Link
+      onClick={onClick}
+      className={`inline-block px-6 py-3 rounded-xl border border-gray-300 text-gray-400 bg-white text-sm font-medium transition ease-in-out duration-300 hover:bg-gray-50 ${
+        className || ''
+      }`}
+      href={href}
+    >
       <p>{children}</p>
     </Link>
   )
