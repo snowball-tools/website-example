@@ -1,3 +1,4 @@
+import ThemeProvider from '@/components/ThemeProvider'
 import type { Metadata } from 'next'
 import '../styles/globals.scss'
 import { mono, sans } from './fonts'
@@ -18,7 +19,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
-      <body className={`${sans.className} antialiased`}>{children}</body>
+      <body className={`${sans.className} antialiased`}>
+        <ThemeProvider defaultTheme="light" attribute="class">
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

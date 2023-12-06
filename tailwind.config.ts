@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -19,6 +20,7 @@ const config: Config = {
         sunriseOrange: '#feb34c',
         coralPink: '#ff9f93',
         electricPurple: '#ba2fd2',
+        darkNavy: '#05051e',
         skyBlue: '#b0c8ff',
         critical: '#9f2121',
         high: '#b2450d',
