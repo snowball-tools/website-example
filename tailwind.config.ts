@@ -20,7 +20,11 @@ const config: Config = {
         sunriseOrange: '#feb34c',
         coralPink: '#ff9f93',
         electricPurple: '#ba2fd2',
-        darkNavy: '#05051e',
+        darkNavy: {
+          100: '#101028',
+          300: '#0c0c26',
+          500: '#05051c',
+        },
         skyBlue: '#b0c8ff',
         critical: '#9f2121',
         high: '#b2450d',
