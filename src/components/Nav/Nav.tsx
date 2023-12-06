@@ -22,7 +22,11 @@ function getNavItems(currentPath: string) {
         aria-current={currentPath === item.href ? 'page' : undefined}
         target={item.newTab ? '_blank' : undefined}
       >
-        <span className={currentPath === item.href ? 'gradient-text font-semibold' : 'text-black'}>
+        <span
+          className={
+            currentPath === item.href ? 'gradient-text font-semibold' : 'text-black dark:text-white'
+          }
+        >
           {item.name}
         </span>
       </Link>
@@ -37,7 +41,7 @@ const Nav = ({ currentPath }: NavProps) => {
         <>
           <div className="flex h-10 items-center justify-between">
             <div className="flex items-center md:hidden">
-              <Disclosure.Button className="inline-flex items-center justify-center text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <Disclosure.Button className="inline-flex items-center justify-center text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:focus:ring-darkNavy-100">
                 <span className="sr-only">Menu</span>
                 {open ? (
                   <XMarkIcon className="block h-8 w-8" aria-hidden="true" />
@@ -51,8 +55,8 @@ const Nav = ({ currentPath }: NavProps) => {
               <ul className="flex space-x-1 lg:space-x-4">{getNavItems(currentPath)}</ul>
             </div>
 
-            <Disclosure.Panel className="absolute z-10 top-[58px] left-0 right-0 md:hidden">
-              <ul className="space-y-1 px-2 pb-3 pt-2 bg-white shadow">
+            <Disclosure.Panel className="absolute z-10 top-[56px] left-0 right-0 md:hidden">
+              <ul className="space-y-1 px-2 pb-3 pt-2 bg-white dark:bg-darkNavy-100 shadow">
                 {getNavItems(currentPath)}
               </ul>
             </Disclosure.Panel>
