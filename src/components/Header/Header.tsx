@@ -8,10 +8,12 @@ import { CtaSecondary } from '../Cta'
 import Nav from '../Nav'
 
 type HeaderProps = {
+  ctaUrl?: string
+  ctaText: string
   handleCtaClick?: (e: React.MouseEvent<HTMLElement>) => void
 }
 
-const Header = ({ handleCtaClick }: HeaderProps) => {
+const Header = ({ ctaUrl, ctaText, handleCtaClick }: HeaderProps) => {
   const currentPath = usePathname()
   const theme = useTheme()
 
@@ -38,8 +40,9 @@ const Header = ({ handleCtaClick }: HeaderProps) => {
           >
             Sign In to Swarm
           </Link>
-          <CtaSecondary onClick={handleCtaClick} href="/">
-            Request an Audit
+
+          <CtaSecondary onClick={handleCtaClick} href={ctaUrl || '/'}>
+            {ctaText}
           </CtaSecondary>
         </div>
       </header>

@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <Header handleCtaClick={handleCtaClick} />
+      <Header ctaText="Request an Audit" handleCtaClick={handleCtaClick} />
       <HeroHome handleCtaClick={handleCtaClick} />
       <DetailAuditReportsTab />
       <StandaloneHeading>
