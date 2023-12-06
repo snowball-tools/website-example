@@ -9,7 +9,9 @@
   font-weight: 700;
   background-image: linear-gradient(to left, $sunriseOrange, $coralPink, $skyBlue);
   z-index: 0;
-  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    all 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.05);
@@ -22,7 +24,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to left, darken($sunriseOrange, 5), darken($coralPink, 2), darken($skyBlue, 5));
+    background-image: linear-gradient(
+      to left,
+      darken($sunriseOrange, 5),
+      darken($coralPink, 2),
+      darken($skyBlue, 5)
+    );
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: -1;
