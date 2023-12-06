@@ -1,22 +1,25 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import DiscordIcon from '../icons/Discord'
+import TwitterIcon from '../icons/Twitter'
+import YouTubeIcon from '../icons/YouTube'
 
 const renderSocialLinks = () => {
   return (
     <>
       <li>
         <Link href="https://twitter.com/0xMacroSecurity" target="_blank">
-          <Image className="" src="/icons/twitter.svg" alt="Twitter" width={24} height={24} />
+          <TwitterIcon className="h-7 w-7 opacity-80 text-gray-700 dark:text-white transition hover:opacity-100" />
         </Link>
       </li>
       <li>
         <Link href="https://discord.gg/VZ6wXgGSHk" target="_blank">
-          <Image className="" src="/icons/discord.svg" alt="Discord" width={24} height={24} />
+          <DiscordIcon className="h-7 w-7 opacity-80 text-gray-700 dark:text-white transition hover:opacity-100" />
         </Link>
       </li>
       <li>
         <Link href="https://0xmacro.com/youtube" target="_blank">
-          <Image className="" src="/icons/youtube.svg" alt="YouTube" width={24} height={24} />
+          <YouTubeIcon className="h-7 w-7 opacity-80 text-gray-700 dark:text-white transition hover:opacity-100" />
         </Link>
       </li>
     </>
