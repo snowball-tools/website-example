@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
-      <body className={`${sans.className} antialiased`}>
+      <body className={`${sans.className} antialiased dark:bg-darkNavy-500`}>
         <ThemeProvider defaultTheme="light" attribute="class">
           {children}
         </ThemeProvider>
