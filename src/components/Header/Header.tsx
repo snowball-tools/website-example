@@ -31,7 +31,7 @@ const Header = ({ handleCtaClick }: HeaderProps) => {
         </div>
         <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-7">
           <Link
-            className="text-electricPurple hover:underline md:text-sm lg:text-base"
+            className="text-electricPurple hover:underline md:text-sm lg:text-base hidden"
             href="https://swarm.0xmacro.com/signup"
           >
             Sign In to Swarm
