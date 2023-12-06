@@ -70,7 +70,7 @@ const testimonials: Testimonial[] = [
     name: 'Fleet Commander',
     avatar: 'fleet-commander.png',
     message:
-      "We've worked with a lot of auditors. Macro is by far the best, it's not even comparable.",
+      "We've worked with a lot of auditors. <span class='text-electricPurple opacity-80'>Macro is by far the best, it's not even comparable</span>.",
     title: 'Co-Founder',
     company: 'The Citadel Game',
   },

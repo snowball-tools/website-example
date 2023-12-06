@@ -11,6 +11,7 @@ const TestimonialCard = ({ data, className }: TestimonialCardProps) => {
     <div
       className={`${className} border p-6 rounded-3xl bg-white dark:bg-darkNavy-100 dark:border-gray-800`}
     >
+      <p className="mb-8 sm:mb-6" dangerouslySetInnerHTML={{ __html: `“${data.message}”` }}></p>
       <div className="flex gap-3 items-center">
         <div className="">
           <Image
