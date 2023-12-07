@@ -8,7 +8,7 @@ const HeroGasBlaster = () => {
   const [repo, setRepo] = useState('')
 
   return (
-    <div className="mt-8 flex flex-col">
+    <div className="mt-10 flex flex-col">
       <h1 className="text-center font-bold text-2xl sm:text-5xl md:text-6xl text-[#05051e] dark:text-white leading-10 sm:leading-tight">
         Make your contracts <br /> <span className="gradient-text">gas efficient</span>
       </h1>
