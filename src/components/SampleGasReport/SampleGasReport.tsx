@@ -5,7 +5,7 @@ const SampleGasReport = () => {
   return (
     <div className="mx-3 max-w-full mt-20 relative dark:bg-darkNavy-300 border dark:border-gray-800 rounded-lg lg:mx-auto lg:max-w-4xl">
       <Image
-        src="/misc/sample-report-arrow.svg"
+        src="/misc/sample-gas-report-arrow.svg"
         alt="Sample Report Arrow"
         width={140}
         height={34}
