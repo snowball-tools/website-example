@@ -7,9 +7,9 @@ const SampleGasReport = () => {
       <Image
         src="/misc/sample-gas-report-arrow.svg"
         alt="Sample Report Arrow"
-        width={140}
+        width={120}
         height={34}
-        className="absolute top-[-45px] right-[10px] lg:right-[40px]"
+        className="absolute top-[-38px] right-[20px] md:right-[50px] lg:right-[80px] lg:w-[120px]"
       />
 
       <div className="p-5 pb-0 overflow-x-scroll">
