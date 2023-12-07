@@ -19,7 +19,7 @@ const Header = ({ ctaUrl, ctaText, handleCtaClick }: HeaderProps) => {
 
   return (
     <>
-      <header className="relative p-2 flex justify-between max-w-5xl mx-auto items-center dark:bg-darkNavy-500 md:dark:bg-transparent md:p-4">
+      <header className="relative p-2 flex justify-between max-w-5xl mx-auto items-center shadow-sm dark:shadow-2xl dark:bg-darkNavy-500 md:dark:bg-transparent md:dark:shadow-none md:shadow-none md:p-4">
         <div className="flex flex-row-reverse justify-between items-center w-full md:flex-row md:w-auto md:space-x-3 lg:space-x-16">
           <Link href="/">
             <Image
