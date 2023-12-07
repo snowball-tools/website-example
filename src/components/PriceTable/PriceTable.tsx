@@ -1,3 +1,4 @@
+import { APP_URL } from '@/utils/constants'
 import { BorderCard } from '../Card'
 import { CtaPrimary } from '../Cta'
 
@@ -12,7 +13,7 @@ const PriceTable = () => {
         <span className="text-gray-600 block mb-3 sm:mb-6">Per repository</span>
         <CtaPrimary
           className="flex gap-2 justify-center text-sm"
-          href="https://swarm.0xmacro.com/"
+          href={APP_URL}
           icon="/icons/github.svg"
         >
           Try it with a Free Scan

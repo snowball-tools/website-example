@@ -1,5 +1,6 @@
 'use client'
 
+import { APP_URL } from '@/utils/constants'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { TypeAnimation } from 'react-type-animation'
@@ -50,7 +51,7 @@ const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
         Already have an account?{' '}
         <Link
           className="text-electricPurple hover:underline block md:inline"
-          href="https://swarm.0xmacro.com/signup"
+          href={`${APP_URL}/signup`}
         >
           Sign In to Gas Blaster
         </Link>

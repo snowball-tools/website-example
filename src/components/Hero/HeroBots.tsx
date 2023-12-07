@@ -1,5 +1,6 @@
 'use client'
 
+import { APP_URL } from '@/utils/constants'
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,7 +14,7 @@ const HeroBots = () => {
     <div className="mt-8 flex flex-col">
       <div className="text-center mb-5 sm:mb-3">
         <Link
-          href="https://swarm.0xmacro.com/"
+          href={APP_URL}
           className="border rounded-3xl py-1 px-5 inline-block bg-white hover:bg-gray-100 transition-all duration-500"
         >
           <div className="flex gap-2">
@@ -32,7 +33,7 @@ const HeroBots = () => {
         Already have an account?{' '}
         <Link
           className="text-electricPurple hover:underline block md:inline"
-          href="https://swarm.0xmacro.com/signup"
+          href={`${APP_URL}/signup`}
         >
           Sign In to Swarm
         </Link>
@@ -40,7 +41,7 @@ const HeroBots = () => {
 
       <div className="mt-8 mx-auto w-full max-w-xl relative">
         <form
-          action="https://swarm.0xmacro.com/start/connect"
+          action={`${APP_URL}/start/connect`}
           className="w-full sm:w-[calc(100%+1.25rem)] lg:w-[calc(100%+2rem)] sm:-mx-2.5 lg:-mx-4 flex flex-col p-2.5 bg-purple-600/5 rounded-lg sm:flex-row sm:gap-3 lg:p-4"
           onClick={(e) => {
             const repo = e.currentTarget.repo.value
@@ -144,10 +145,7 @@ const HeroBots = () => {
               Sample Report
             </h2>
 
-            <Link
-              className="flex gap-2 font-semibold items-center hover:underline"
-              href="https://swarm.0xmacro.com/"
-            >
+            <Link className="flex gap-2 font-semibold items-center hover:underline" href={APP_URL}>
               Pricing
               <ArrowUpRightIcon className="w-3 h-3" />
             </Link>
@@ -245,7 +243,7 @@ const HeroBots = () => {
                   }}
                 >
                   <a
-                    href="https://swarm.0xmacro.com/reports/117938d1-a505-4f28-bf0e-9a8c5e2ce2bb"
+                    href={`${APP_URL}/reports/117938d1-a505-4f28-bf0e-9a8c5e2ce2bb`}
                     className="flex gap-1 inline-block py-3 px-5 font-sans font-bold text-[15px] leading-[14px] text-center text-purple-500 bg-white rounded-lg border border-gray-200 shadow"
                   >
                     View Report
@@ -268,7 +266,7 @@ const HeroBots = () => {
                 </div>
               </div>
               <a
-                href="https://swarm.0xmacro.com/reports/117938d1-a505-4f28-bf0e-9a8c5e2ce2bb"
+                href={`${APP_URL}/reports/117938d1-a505-4f28-bf0e-9a8c5e2ce2bb`}
                 className="flex gap-1 block py-3 font-sans font-bold text-[15px] leading-[14px] text-center text-purple-500 bg-white rounded-lg border border-gray-200 shadow lg:hidden"
               >
                 View Report

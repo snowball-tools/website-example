@@ -1,5 +1,6 @@
 'use client'
 
+import { APP_URL } from '@/utils/constants'
 import Link from 'next/link'
 import { useState } from 'react'
 import RocketIcon from '../icons/Rocket'
@@ -19,7 +20,7 @@ const HeroGasBlaster = () => {
         Already have an account?{' '}
         <Link
           className="text-electricPurple hover:underline block md:inline"
-          href="https://swarm.0xmacro.com/signup"
+          href={`${APP_URL}/signup`}
         >
           Sign In to Gas Blaster
         </Link>
@@ -27,7 +28,7 @@ const HeroGasBlaster = () => {
 
       <div className="mt-8 mx-auto w-full max-w-xl relative">
         <form
-          action="https://swarm.0xmacro.com/start/connect"
+          action={`${APP_URL}/start/connect`}
           className="w-full flex flex-col p-2.5 bg-darkNavy-100 rounded-lg sm:flex-row sm:gap-3 xlg:p-4 xlg:-mx-4 xlg:w-[calc(100%+2rem)]"
           onClick={(e) => {
             const repo = e.currentTarget.repo.value

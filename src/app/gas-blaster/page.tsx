@@ -10,13 +10,14 @@ import TestimonialWall from '@/components/TestimonialWall'
 import GasIcon from '@/components/icons/Gas'
 import InfinityIcon from '@/components/icons/Infinity'
 import SingleScanIcon from '@/components/icons/SingleScan'
+import { APP_URL } from '@/utils/constants'
 import Image from 'next/image'
 
 const GasBlaster = () => {
   return (
     <main className="">
       <div className="bg-hero-pattern-dark bg-no-repeat bg-center absolute top-[-20px] left-0 right-0 h-[450px] wx-full -z-50"></div>
-      <Header ctaText="Get a Free Preview" ctaUrl="https://swarm.0xmacro.com/" />
+      <Header ctaText="Get a Free Preview" ctaUrl={APP_URL} />
       <HeroGasBlaster />
       <div className="relative">
         <Image

@@ -1,3 +1,4 @@
+import { APP_URL } from '@/utils/constants'
 import { CtaPrimary } from '../Cta'
 
 type PriceCardProps = {
@@ -20,7 +21,7 @@ const PriceCard = ({ price, trialDuration, icon, description }: PriceCardProps) 
         <p className="text-gray-500 block" dangerouslySetInnerHTML={{ __html: description }}></p>
       </div>
 
-      <CtaPrimary className="flex gap-2 justify-center text-sm" href="https://swarm.0xmacro.com/">
+      <CtaPrimary className="flex gap-2 justify-center text-sm" href={APP_URL}>
         Get a Free Preview
       </CtaPrimary>
     </div>

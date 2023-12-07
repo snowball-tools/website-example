@@ -1,6 +1,7 @@
 'use client'
 
 import useTheme from '@/hooks/useTheme'
+import { APP_URL } from '@/utils/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -36,7 +37,7 @@ const Header = ({ ctaUrl, ctaText, handleCtaClick }: HeaderProps) => {
         <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-7">
           <Link
             className="text-electricPurple hidden hover:underline md:text-sm lg:text-base lg:block"
-            href="https://swarm.0xmacro.com/signup"
+            href={`${APP_URL}/signup`}
           >
             Sign In to Gas Blaster
           </Link>
