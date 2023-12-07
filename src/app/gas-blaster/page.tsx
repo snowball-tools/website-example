@@ -9,6 +9,7 @@ import StandaloneHeading from '@/components/StandaloneHeading'
 import TestimonialWall from '@/components/TestimonialWall'
 import GasIcon from '@/components/icons/Gas'
 import InfinityIcon from '@/components/icons/Infinity'
+import RocketIcon from '@/components/icons/Rocket'
 import SingleScanIcon from '@/components/icons/SingleScan'
 import { APP_URL } from '@/utils/constants'
 import Image from 'next/image'
@@ -36,7 +37,7 @@ const GasBlaster = () => {
           className="hidden absolute -z-50 max-w-xl left-[50%] sm:block sm:bottom-[-161px] sm:ml-[-288px] lg:max-w-3xl lg:bottom-[-213px] lg:ml-[-384px]"
         />
       </div>
-      <section className="mt-20 mb-24 px-5 max-w-2xl mx-auto sm:mt-32">
+      <section className="mt-20 mb-24 px-5 max-w-5xl mx-auto sm:mt-32">
         <header className="flex flex-col items-center gap-2 mb-10 text-3xl font-bold relative">
           <div className="bg-dots-pattern-dark bg-no-repeat bg-center absolute top-[-15px] left-[50%] -ml-[122px] right-0 w-[244px] h-[102px] z-1"></div>
           <div className="mb-6 mt-2 p-5 rounded-2xl inline-block fancy-icon gradient-background">
@@ -46,18 +47,24 @@ const GasBlaster = () => {
             Simple <span className="gradient-text">Pricing</span>
           </h1>
         </header>
-        <div className="md:flex md:gap-10">
+        <div className="md:flex md:gap-5">
           <PriceCard
             price="$39/m"
             trialDuration="7"
             icon={<SingleScanIcon className="h-5 w-5 text-gray-500" />}
-            description="Unlimited Scans in <br /> Unlimited Repos"
+            description="1 Repository <br /> 3 scans / month"
+          />
+          <PriceCard
+            price="$99/m"
+            trialDuration="7"
+            icon={<RocketIcon className="h-5 w-5 text-gray-500" strokeWidth="1.2" />}
+            description="1 Repository <br /> Unlimited Scans"
           />
           <PriceCard
             price="$399/m"
             trialDuration="7"
             icon={<InfinityIcon className="h-5 w-5 text-gray-500" />}
-            description="Unlimited Scans <br /> in 1 Repo"
+            description="Unlimited Repositories <br /> Unlimited Scans"
           />
         </div>
       </section>
