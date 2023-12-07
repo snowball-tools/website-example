@@ -52,7 +52,7 @@ const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
           className="text-electricPurple hover:underline block md:inline"
           href="https://swarm.0xmacro.com/signup"
         >
-          Sign In to Swarm
+          Sign In to Gas Blaster
         </Link>
       </p>
     </div>
