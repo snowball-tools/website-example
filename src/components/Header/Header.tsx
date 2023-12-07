@@ -35,10 +35,10 @@ const Header = ({ ctaUrl, ctaText, handleCtaClick }: HeaderProps) => {
         </div>
         <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-7">
           <Link
-            className="text-electricPurple hover:underline md:text-sm lg:text-base hidden"
+            className="text-electricPurple hidden hover:underline md:text-sm lg:text-base lg:block"
             href="https://swarm.0xmacro.com/signup"
           >
-            Sign In to Swarm
+            Sign In to Gas Blaster
           </Link>
 
           <CtaSecondary onClick={handleCtaClick} href={ctaUrl || '/'}>
