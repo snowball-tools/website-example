@@ -56,7 +56,7 @@ const Nav = ({ currentPath }: NavProps) => {
             </div>
 
             <Disclosure.Panel className="absolute z-10 top-[56px] left-0 right-0 md:hidden">
-              <ul className="space-y-1 px-2 pb-3 pt-2 bg-white dark:bg-darkNavy-100 shadow">
+              <ul className="space-y-1 px-2 pb-3 pt-2 bg-white dark:bg-darkNavy-100 bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm shadow">
                 {getNavItems(currentPath)}
               </ul>
             </Disclosure.Panel>
