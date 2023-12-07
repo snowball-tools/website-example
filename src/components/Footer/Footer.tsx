@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import DiscordIcon from '../icons/Discord'
 import HammerIcon from '../icons/Hammer'
-import TwitterIcon from '../icons/Twitter'
+import XTwitterIcon from '../icons/TwitterX'
 import YouTubeIcon from '../icons/YouTube'
 
 const renderSocialLinks = () => {
@@ -12,7 +12,7 @@ const renderSocialLinks = () => {
     <>
       <li>
         <Link href="https://twitter.com/0xMacroSecurity" target="_blank">
-          <TwitterIcon className="h-7 w-7 opacity-80 text-gray-700 dark:text-white transition hover:opacity-100" />
+          <XTwitterIcon className="h-7 w-7 opacity-80 text-gray-700 dark:text-white transition hover:opacity-100" />
         </Link>
       </li>
       <li>
