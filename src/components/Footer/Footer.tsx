@@ -21,7 +21,7 @@ const renderSocialLinks = () => {
         </Link>
       </li>
       <li>
-        <Link href="https://0xmacro.com/youtube" target="_blank">
+        <Link href="/youtube" target="_blank">
           <YouTubeIcon className="h-7 w-7 opacity-80 text-gray-700 dark:text-white transition hover:opacity-100" />
         </Link>
       </li>
