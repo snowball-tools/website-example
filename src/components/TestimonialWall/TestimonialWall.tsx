@@ -93,7 +93,7 @@ const testimonials: Testimonial[] = [
 
 const TestimonialWall = () => {
   return (
-    <section className="px-6 mb-16 lg:max-w-4xl lg:mx-auto">
+    <section className="px-6 mb-16 mx-auto max-w-[640px] md:max-w-4xl">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 640: 2, 768: 3 }}>
         <Masonry columnsCount={3} gutter={'20px'}>
           {testimonials.map((testimonial, index) => {
