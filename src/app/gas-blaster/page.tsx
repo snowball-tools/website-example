@@ -54,7 +54,7 @@ const GasBlaster = () => {
             price="$39/m"
             trialDuration="7"
             description="1 Repository <br /> 3 scans / month"
-            ctaText="Subscribe"
+            ctaText="Get a Free Preview"
             ctaType="secondary"
           />
           <PriceCard
@@ -63,7 +63,7 @@ const GasBlaster = () => {
             price="$99/m"
             trialDuration="7"
             description="1 Repository <br /> <strong>Unlimited Scans</strong>"
-            ctaText="Subscribe"
+            ctaText="Get a Free Preview"
           />
           <PriceCard
             icon={<InfinityIcon className="h-5 w-5 text-gray-500" />}
