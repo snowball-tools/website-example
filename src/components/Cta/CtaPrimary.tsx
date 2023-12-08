@@ -13,10 +13,10 @@ interface CtaProps {
 
 const CtaPrimary = ({ className, children, href, icon, border, onClick }: CtaProps) => {
   return (
-    <div className={`${className} ${border ? 'triple-border' : ''} inline-block`}>
+    <div className={`${className} ${border && 'triple-border'}`}>
       <Link
         onClick={onClick}
-        className={`${style['cta-primary']} ${icon ? '!flex gap-2' : ''}`}
+        className={`${style['cta-primary']} w-full ${icon ? '!flex gap-2' : ''}`}
         href={href}
       >
         {icon && <Image src={icon} alt="" width={20} height={20} />}
