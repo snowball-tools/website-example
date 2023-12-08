@@ -49,22 +49,29 @@ const GasBlaster = () => {
         </header>
         <div className="md:flex md:gap-5">
           <PriceCard
+            icon={<SingleScanIcon className="h-5 w-5 text-gray-500" />}
+            planTitle="Hobby"
             price="$39/m"
             trialDuration="7"
-            icon={<SingleScanIcon className="h-5 w-5 text-gray-500" />}
             description="1 Repository <br /> 3 scans / month"
+            ctaText="Subscribe"
           />
           <PriceCard
+            icon={<RocketIcon className="h-5 w-5 text-gray-500" strokeWidth="1.2" />}
+            planTitle="Growth"
             price="$99/m"
             trialDuration="7"
-            icon={<RocketIcon className="h-5 w-5 text-gray-500" strokeWidth="1.2" />}
-            description="1 Repository <br /> Unlimited Scans"
+            description="1 Repository <br /> <strong>Unlimited Scans</strong>"
+            ctaText="Subscribe"
           />
           <PriceCard
+            icon={<InfinityIcon className="h-5 w-5 text-gray-500" />}
+            planTitle="Protocol"
             price="$399/m"
             trialDuration="7"
-            icon={<InfinityIcon className="h-5 w-5 text-gray-500" />}
-            description="Unlimited Repositories <br /> Unlimited Scans"
+            description="<strong>Unlimited Repositories</strong> <br /> Unlimited Scans"
+            ctaText="Coming Soon!"
+            ctaDisabled={true}
           />
         </div>
       </section>
