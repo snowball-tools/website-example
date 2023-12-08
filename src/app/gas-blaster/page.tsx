@@ -55,6 +55,7 @@ const GasBlaster = () => {
             trialDuration="7"
             description="1 Repository <br /> 3 scans / month"
             ctaText="Subscribe"
+            ctaType="secondary"
           />
           <PriceCard
             icon={<RocketIcon className="h-5 w-5 text-gray-500" strokeWidth="1.2" />}
@@ -71,7 +72,7 @@ const GasBlaster = () => {
             trialDuration="7"
             description="<strong>Unlimited Repositories</strong> <br /> Unlimited Scans"
             ctaText="Coming Soon!"
-            ctaDisabled={true}
+            ctaType="disabled"
           />
         </div>
       </section>
