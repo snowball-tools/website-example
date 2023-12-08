@@ -1,1 +1,1 @@
-export const APP_URL = 'https://swarm.0xmacro.com'
+export const APP_URL = 'https://gas.0xmacro.com'
