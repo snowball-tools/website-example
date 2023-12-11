@@ -28,7 +28,7 @@ const HeroGasBlaster = () => {
 
       <div className="mt-8 mx-auto w-full max-w-xl relative">
         <form
-          action={`${APP_URL}/start/connect`}
+          action={`${APP_URL}/signup/`}
           className="w-full flex flex-col p-2.5 bg-darkNavy-100 rounded-lg sm:flex-row sm:gap-3 xlg:p-4 xlg:-mx-4 xlg:w-[calc(100%+2rem)]"
           onClick={(e) => {
             const repo = e.currentTarget.repo.value
