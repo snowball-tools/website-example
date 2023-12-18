@@ -1,6 +1,4 @@
-import { getLayout } from '@/utils/getLayout'
 import type { Metadata } from 'next'
-import '../../styles/globals.scss'
 
 export const metadata: Metadata = {
   title: 'Macro - Gas Blaster',
@@ -18,5 +16,5 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return getLayout(children)
+  return children
 }
