@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     title: '0xMacro.com - Gas Blaster',
     description: 'Make your contracts gas efficient. Get a one-click Gas Audit.',
     type: 'website',
-    images: 'gas-blaster-preview.png',
+    images: 'gas-blaster-preview.jpg',
   },
   twitter: {
-    images: 'gas-blaster-preview.png',
+    images: 'gas-blaster-preview.jpg',
   },
 }
 
