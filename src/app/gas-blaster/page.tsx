@@ -51,11 +51,10 @@ const GasBlaster = () => {
           <PriceCard
             icon={<SingleScanIcon className="h-5 w-5 text-gray-500" />}
             planTitle="Hobby"
-            price="$39/m"
+            price="$0/m"
             trialDuration="7"
-            description="1 Repository <br /> 3 scans / month"
-            ctaText="Get a Free Preview"
-            ctaType="secondary"
+            description="1 Repository <br /> 10 scans / month"
+            ctaText="Unlock Free w/ Tweet"
           />
           <PriceCard
             icon={<RocketIcon className="h-5 w-5 text-gray-500" strokeWidth="1.2" />}
@@ -68,7 +67,7 @@ const GasBlaster = () => {
           <PriceCard
             icon={<InfinityIcon className="h-5 w-5 text-gray-500" />}
             planTitle="Protocol"
-            price="$399/m"
+            price="$299/m"
             trialDuration="7"
             description="<strong>Unlimited Repositories</strong> <br /> Unlimited Scans"
             ctaText="Coming Soon!"

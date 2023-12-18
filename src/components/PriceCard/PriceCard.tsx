@@ -16,7 +16,6 @@ const PriceCard = ({
   icon,
   planTitle,
   price,
-  trialDuration,
   description,
   ctaText,
   ctaType = 'primary',
@@ -28,9 +27,6 @@ const PriceCard = ({
         <p className="text-gray-500 block uppercase">{planTitle}</p>
       </div>
       <h1 className="mt-5 font-bold text-4xl">{price}</h1>
-      <p className="text-green-400 border border-green-400 rounded-md inline-block px-3 py-0.5 text-xs mt-8">
-        {trialDuration}-day Free Trial
-      </p>
       <p
         className="text-gray-500 block mt-7 leading-8 md:text-sm md:leading-7 lg:text-base lg:leading-8"
         dangerouslySetInnerHTML={{ __html: description }}
