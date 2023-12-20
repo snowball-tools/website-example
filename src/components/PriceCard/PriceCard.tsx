@@ -21,7 +21,7 @@ const PriceCard = ({
   ctaType = 'primary',
 }: PriceCardProps) => {
   return (
-    <div className="border dark:bg-darkNavy-100 dark:border-gray-800 rounded-2xl px-7 py-7 mb-6 text-center max-w-[320px] mx-auto md:py-4 md:px-7 md:mx-0 md:mb-0 md:w-1/3 lg:p-6">
+    <div className="border dark:bg-darkNavy-100 dark:border-gray-800 rounded-2xl px-7 py-7 mb-6 text-center max-w-[280px] mx-auto md:py-4 md:px-7 md:mx-0 md:mb-0 md:w-1/3 lg:p-6">
       <div className="flex flex-col items-center gap-2 mt-2">
         {icon}
         <p className="text-gray-500 block uppercase">{planTitle}</p>

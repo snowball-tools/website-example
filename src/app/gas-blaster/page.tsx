@@ -47,7 +47,7 @@ const GasBlaster = () => {
             Simple <span className="gradient-text">Pricing</span>
           </h1>
         </header>
-        <div className="md:flex md:gap-5">
+        <div className="md:flex md:gap-5 justify-center">
           <PriceCard
             icon={<SingleScanIcon className="h-5 w-5 text-gray-500" />}
             planTitle="Hobby"
@@ -56,18 +56,18 @@ const GasBlaster = () => {
             description="1 Repository <br /> 10 scans / month"
             ctaText="Unlock Free w/ Tweet"
           />
-          <PriceCard
+          {/* <PriceCard
             icon={<RocketIcon className="h-5 w-5 text-gray-500" strokeWidth="1.2" />}
             planTitle="Growth"
             price="$99/m"
             trialDuration="7"
             description="1 Repository <br /> <strong>Unlimited Scans</strong>"
             ctaText="Get a Free Preview"
-          />
+          /> */}
           <PriceCard
             icon={<InfinityIcon className="h-5 w-5 text-gray-500" />}
             planTitle="Protocol"
-            price="$299/m"
+            price="$199/m"
             trialDuration="7"
             description="<strong>Unlimited Repositories</strong> <br /> Unlimited Scans"
             ctaText="Coming Soon!"
