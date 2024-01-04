@@ -2,6 +2,7 @@
 
 import useTheme from '@/hooks/useTheme'
 import { APP_URL } from '@/utils/constants'
+import { trackOnClick } from '@/utils/track'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -38,6 +39,7 @@ const Header = ({ ctaUrl, ctaText, handleCtaClick }: HeaderProps) => {
           <Link
             className="text-electricPurple hidden hover:underline md:text-sm lg:text-base lg:block"
             href={`${APP_URL}/signup`}
+            onClick={trackOnClick({ pos: 'nav' })}
           >
             Sign In to Gas Blaster
           </Link>

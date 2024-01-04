@@ -1,6 +1,7 @@
 'use client'
 
 import { APP_URL } from '@/utils/constants'
+import { trackOnClick } from '@/utils/track'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { TypeAnimation } from 'react-type-animation'
@@ -52,6 +53,7 @@ const HeroHome = ({ handleCtaClick }: HeroHomeProps) => {
         <Link
           className="text-electricPurple hover:underline block md:inline"
           href={`${APP_URL}/signup`}
+          onClick={trackOnClick({ pos: 'hero' })}
         >
           Sign In to Gas Blaster
         </Link>

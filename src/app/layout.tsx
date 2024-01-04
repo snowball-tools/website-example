@@ -19,6 +19,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
+      <script
+        async
+        src="https://a.0xmacro.com/script.js"
+        data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+      ></script>
       <body className={`${sans.className} antialiased dark:bg-darkNavy-500`}>
         <ThemeProvider defaultTheme="light" attribute="class">
           {children}

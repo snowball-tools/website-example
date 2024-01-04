@@ -1,4 +1,5 @@
 import { APP_URL } from '@/utils/constants'
+import { trackOnClick } from '@/utils/track'
 import Link from 'next/link'
 import { CtaPrimary } from '../Cta'
 
@@ -32,7 +33,11 @@ const PriceCard = ({
         dangerouslySetInnerHTML={{ __html: description }}
       ></p>
       {ctaType === 'primary' && (
-        <CtaPrimary className="mt-5 text-sm md:text-xs lg:text-sm" href={APP_URL}>
+        <CtaPrimary
+          eventPos={'pricing'}
+          className="mt-5 text-sm md:text-xs lg:text-sm"
+          href={APP_URL}
+        >
           {ctaText}
         </CtaPrimary>
       )}
@@ -40,6 +45,7 @@ const PriceCard = ({
         <Link
           className="mt-5 text-sm px-6 py-3.5 rounded-lg text-gray-200 font-bold border w-full block border-gray-500 hover:bg-darkNavy-500 transition duration-300 ease-in-out hover:scale-105 md:text-xs lg:text-sm"
           href={APP_URL}
+          onClick={trackOnClick({ pos: 'pricing' })}
         >
           {ctaText}
         </Link>

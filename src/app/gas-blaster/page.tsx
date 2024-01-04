@@ -12,13 +12,22 @@ import InfinityIcon from '@/components/icons/Infinity'
 import RocketIcon from '@/components/icons/Rocket'
 import SingleScanIcon from '@/components/icons/SingleScan'
 import { APP_URL } from '@/utils/constants'
+import { trackEvent } from '@/utils/track'
 import Image from 'next/image'
 
 const GasBlaster = () => {
+  const handleCtaClick = (pos: string) => (e: React.MouseEvent<HTMLElement>) => {
+    trackEvent(e.currentTarget.innerText, { pos })
+  }
+
   return (
     <main className="">
       <div className="bg-hero-pattern-dark bg-no-repeat bg-center absolute top-[-20px] left-0 right-0 h-[450px] wx-full -z-50"></div>
-      <Header ctaText="Get a Free Preview" ctaUrl={APP_URL} />
+      <Header
+        ctaText="Get a Free Preview"
+        ctaUrl={APP_URL}
+        handleCtaClick={handleCtaClick('nav')}
+      />
       <HeroGasBlaster />
       <div className="relative">
         <Image

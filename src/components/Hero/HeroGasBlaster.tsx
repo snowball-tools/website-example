@@ -1,6 +1,7 @@
 'use client'
 
 import { APP_URL } from '@/utils/constants'
+import { trackEvent, trackOnClick } from '@/utils/track'
 import Link from 'next/link'
 import { useState } from 'react'
 import RocketIcon from '../icons/Rocket'
@@ -21,6 +22,7 @@ const HeroGasBlaster = () => {
         <Link
           className="text-electricPurple hover:underline block md:inline"
           href={`${APP_URL}/signup`}
+          onClick={trackOnClick({ pos: 'hero' })}
         >
           Sign In to Gas Blaster
         </Link>
@@ -32,6 +34,7 @@ const HeroGasBlaster = () => {
           className="w-full flex flex-col p-2.5 bg-darkNavy-100 rounded-lg sm:flex-row sm:gap-3 xlg:p-4 xlg:-mx-4 xlg:w-[calc(100%+2rem)]"
           onClick={(e) => {
             const repo = e.currentTarget.repo.value
+            trackEvent('Get a Free Preview', { pos: 'hero', repo })
             if (!repo) e.preventDefault()
           }}
         >
