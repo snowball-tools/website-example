@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Macro - Gas Blaster',
+  title: 'Macro - Gas Hero',
   description: 'Make your contracts gas efficient. Get a one-click Gas Audit.',
   metadataBase: new URL('https://macro-website.onrender.com'),
   openGraph: {
-    title: '0xMacro.com - Gas Blaster',
+    title: '0xMacro.com - Gas Hero',
     description: 'Make your contracts gas efficient. Get a one-click Gas Audit.',
     type: 'website',
     images: '/opengraph/gas-blaster-preview.jpg',

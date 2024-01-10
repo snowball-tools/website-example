@@ -24,7 +24,7 @@ const HeroGasBlaster = () => {
           href={`${APP_URL}/signup`}
           onClick={trackOnClick({ pos: 'hero' })}
         >
-          Sign In to Gas Blaster
+          Sign In to Gas Hero
         </Link>
       </p>
 

@@ -65,7 +65,7 @@ const Footer = () => {
                   <Link href="/">Audits</Link>
                 </li>
                 <li>
-                  <Link href="/gas-blaster">Gas Blaster</Link>
+                  <Link href="/gas-blaster">Gas Hero</Link>
                 </li>
                 <li>
                   <Link href="https://0xmacro.com/library" target="_blank">
