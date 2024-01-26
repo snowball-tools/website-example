@@ -81,7 +81,7 @@ const DetailAuditReportsTab = () => {
   return (
     <div className="mt-16 mb-16">
       <p className="text-center">
-        Work with you soon-to-be{' '}
+        Work with your soon-to-be{' '}
         <span className="gradient-text block sm:inline">favorite Auditors.</span>
       </p>
 

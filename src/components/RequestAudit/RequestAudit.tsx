@@ -14,8 +14,8 @@ const RequestAudit = ({ auditForm }: RequestAuditProps) => {
           Request an <span className="gradient-text">Audit</span>
         </h1>
         <p className="mx-auto sm:max-w-[400px]">
-          We respond fast! Fill out the form below and our team will reach out to you within 24
-          hours. You can chat directly with us on{' '}
+          We respond fast! Fill out the form below and our team will reach out to you within 1-2
+          business days. You can chat directly with us on{' '}
           <Link
             className="underline underline-offset-2"
             href="https://t.me/haileybf"
@@ -27,11 +27,12 @@ const RequestAudit = ({ auditForm }: RequestAuditProps) => {
         </p>
       </header>
       <Widget
-        id="fOSnAebr"
+        id="dIBgh4QR"
         className="mx-2 -mt-36 shadow rounded sm:mx-auto sm:max-w-xl"
-        autoResize
+        autoResize="700, 1200"
         disableScroll
-        noHeading
+        hideHeaders
+        hideFooter
         inlineOnMobile
       />
     </section>
