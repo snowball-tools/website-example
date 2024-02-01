@@ -1,36 +1,18 @@
-'use client'
+import Footer from '@/components/minimal/Footer'
+import Header from '../components/minimal/Header'
 
-import DetailAuditReportsTab from '@/components/DetailAuditReportsTab'
-import Footer from '@/components/Footer'
-import { HeroHome } from '@/components/Hero'
-import RequestAudit from '@/components/RequestAudit'
-import StandaloneHeading from '@/components/StandaloneHeading'
-import TestimonialHighlight from '@/components/TestimonialHighlight'
-import TestimonialWall from '@/components/TestimonialWall'
-import { trackEvent } from '@/utils/track'
-import { useRef } from 'react'
-import Header from '../components/Header'
-
-export default function Home() {
-  const auditForm = useRef<HTMLElement | null>(null)
-
-  const handleCtaClick = (pos: string) => (e: React.MouseEvent<HTMLElement>) => {
-    trackEvent(e.currentTarget.innerText, { pos })
-    e.preventDefault()
-    auditForm.current?.scrollIntoView({ behavior: 'smooth' })
-  }
-
+export default function HomePage() {
   return (
     <main className="">
-      <Header ctaText="Request an Audit" handleCtaClick={handleCtaClick('nav')} />
-      <HeroHome handleCtaClick={handleCtaClick('hero')} />
-      <DetailAuditReportsTab />
-      <StandaloneHeading>
-        <span className="gradient-text">Web3</span> builders <br /> love Macro
-      </StandaloneHeading>
-      <TestimonialHighlight />
-      <TestimonialWall />
-      <RequestAudit auditForm={auditForm} />
+      <Header />
+
+      <main className="Content mt-6">
+        <h1 className="text-[1.3rem] leading-snug font-semibold">
+          Macro is an Audit & Investment firm focused on early stage token projects.
+        </h1>
+        <p className="mt-4 font-medium">Get a world-class security team on your cap table.</p>
+      </main>
+
       <Footer />
     </main>
   )

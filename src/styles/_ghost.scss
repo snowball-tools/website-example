@@ -1,0 +1,237 @@
+// Styles from ghost, a la carte
+
+$breakpoint-phone:		30em;
+$breakpoint-tablet:		50em;
+$breakpoint-desktop:	70em;
+
+$color-green-85: #36D995;
+$color-green-72: #2DB77E;
+
+$color-yellow-100:	#FFC336;
+
+$color-gray-97: #F2F3F5;
+$color-gray-90: #E1E2E6;
+$color-gray-85: #D4D5D9;
+$color-gray-65: #9D9FA6;
+$color-gray-50: #737580;
+$color-gray-40: #595B66;
+$color-gray-25: #363740;
+$color-gray-15: #1F2026;
+
+/*
+	Change the accent colors here. Make sure they work on light an dark
+	backgrounds or as background color for light and dark text color
+*/
+
+$color-primary-default:		$color-green-85; /* Light */
+$color-primary-active:		$color-green-72; /* Dark */
+
+.GhostContent {
+  figcaption {
+		color: $color-gray-40;
+		text-align: center;
+		max-width: 32em;
+		margin: auto;
+		font-size: 0.75em;
+		line-height: 1.25em;
+		padding: 0.66666em 0;
+	}
+
+  .kg-image-card {
+	  margin: 0 0 2em;
+	  max-width: none !important;
+
+	  &.kg-width-wide {
+	    max-width: 64em !important;
+	    width: calc( 100vw - 16em );
+			margin: 2vw 0 calc( 2em + 2vw);
+
+			@media only screen and (max-width: $breakpoint-desktop) {
+				width: calc( 100vw - 8em );
+			}
+
+			@media only screen and (max-width: $breakpoint-tablet) {
+				width: calc( 100vw - 2em );
+			}
+	  }
+
+	  &.kg-width-full {
+			max-width: 80em !important;
+	    width: calc( 100vw - 8em );
+			margin: 2vw 0 calc( 2em + 2vw);
+
+			@media only screen and (max-width: $breakpoint-desktop) {
+				width: calc( 100vw - 4em );
+			}
+
+			@media only screen and (max-width: $breakpoint-tablet) {
+				width: 100vw;
+			}
+	  }
+
+	  .kg-image {
+	    margin: 0 auto;
+	  }
+
+	  .kg-image-full + figcaption {
+	    margin-bottom: 1.33333em;
+	  }
+	}
+
+	.kg-gallery-card {
+		max-width: 64em !important;
+		width: calc( 100vw - 16em );
+		margin: 2vw 0 calc( 2em + 2vw);
+
+		@media only screen and (max-width: $breakpoint-desktop) {
+			width: calc( 100vw - 8em );
+		}
+
+		@media only screen and (max-width: $breakpoint-tablet) {
+			width: calc( 100vw - 2em );
+		}
+	}
+
+	.kg-gallery-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.kg-gallery-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.kg-gallery-image img {
+		display: block;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.kg-gallery-row:not(:first-of-type) {
+		margin: 0.75em 0 0 0;
+	}
+
+	.kg-gallery-image:not(:first-of-type) {
+		margin: 0 0 0 0.75em;
+	}
+
+	.kg-embed-card {
+	  margin: 0 0 2em;
+
+	  > * {
+	    margin-left: auto;
+	    margin-right: auto;
+	  }
+	}
+
+	.kg-bookmark-card {
+	  width: 100%;
+	  margin: 0 0 2em;
+	}
+
+	.kg-bookmark-container {
+	  display: flex;
+	  text-decoration: none;
+	  min-height: 10em;
+	  background: $color-gray-97;
+	  border: 0 !important;
+	  overflow: hidden;
+	}
+
+	.kg-bookmark-content {
+	  display: flex;
+	  flex-direction: column;
+	  flex-grow: 1;
+	  align-items: flex-start;
+	  justify-content: start;
+	  padding: 1.5em;
+	  color: $color-gray-40;
+	}
+
+	.kg-bookmark-title {
+	  color: $color-gray-15;
+	  font-size: 0.75em;
+	  line-height: 2em;
+	  font-weight: 700;
+	}
+
+	.kg-bookmark-description {
+	  display: -webkit-box;
+	  font-size: 0.75em;
+	  line-height: 1.66666em;
+	  font-weight: 400;
+	  margin: 0.5em 0 1em;
+	  max-height: 3.33333em;
+	  overflow-y: hidden;
+	  -webkit-line-clamp: 2;
+	  -webkit-box-orient: vertical;
+	}
+
+	.kg-bookmark-thumbnail {
+	  position: relative;
+	  min-width: 33%;
+	  max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.kg-bookmark-thumbnail img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  max-width: 100%;
+	  max-height: 100%;
+	  margin: 0;
+	  object-fit: cover;
+	}
+
+	.kg-bookmark-metadata {
+	  display: flex;
+	  align-items: center;
+	  font-size: 0.75em;
+	  line-height: 1.66666em;
+	  color: $color-gray-25;
+	  font-weight: 400;
+	  margin-top: 1em;
+	  flex-wrap: wrap;
+	}
+
+	.kg-bookmark-icon {
+	  width: 1.33333em;
+	  height: 1.33333em;
+	  margin: 0 0.75em 0 0;
+	}
+
+	.kg-bookmark-author:after {
+	  content: "•";
+	  margin: 0 0.33333em;
+	}
+
+	.kg-bookmark-publisher {
+	    color: $color-primary-default;
+	}
+
+	@media (max-width: $breakpoint-tablet) {
+	  .kg-bookmark-container {
+	    flex-direction: column;
+	  }
+
+	  .kg-bookmark-thumbnail {
+	    order: 1;
+	    width: 100%;
+	    min-height: 160px;
+	  }
+
+	  .kg-bookmark-thumbnail img {
+	    border-radius: 3px 3px 0 0;
+	  }
+
+	  .kg-bookmark-content {
+	    order: 2
+	  }
+	}
+}

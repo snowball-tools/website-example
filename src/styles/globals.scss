@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './_fonts.scss';
 @import './_variables.scss';
+@import './_typography.scss';
+@import './_ghost.scss';
+
+body {
+  @apply dark:bg-night-900 dark:text-dusk-200;
+}
+
+main.Content {
+  @apply px-5 xs:px-9 max-w-xl mx-auto;
+}
+
+main.Content.--wide {
+  @apply px-3;
+}
 
 .gradient-text,
 .gradient-text > *:after {
@@ -71,4 +86,9 @@
 .dark .fancy-icon::before,
 .dark .fancy-icon::after {
   @apply border-gray-800;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  animation-fill-mode: forwards;
 }

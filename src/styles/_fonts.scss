@@ -1,0 +1,109 @@
+:root {
+  --font-sans: "AvenirNext", sans-serif;
+  --font-ui: 'Space Grotesk', sans-serif;
+}
+
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-Light.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-Light.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 300;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-LightItalic.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-LightItalic.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-Regular.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-Regular.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 400;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-Italic.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-Italic.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-Medium.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-Medium.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 500;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-MediumItalic.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-MediumItalic.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-Demi.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-Demi.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 600;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-DemiItalic.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-DemiItalic.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-Bold.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-Bold.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 700;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-BoldItalic.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-BoldItalic.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-Heavy.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-Heavy.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 800;
+}
+@font-face {
+  src:url("/fonts/avenir-next/AvenirNext-HeavyItalic.woff2") format("woff2"),url("/fonts/avenir-next/AvenirNext-HeavyItalic.woff") format("woff");
+  font-family: "AvenirNext";
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+// @font-face {
+//   /* Regular */
+//   font-family: "Informative";
+//   font-weight: 400;
+//   src: url("https://0xmacro.com/library/fonts/Informative-Regular.woff2") format("woff2"),url("https://0xmacro.com/library/fonts/Informative-Regular.woff") format("woff");
+// }
+// @font-face {
+//   /* Italic */
+//   font-family: "Informative";
+//   font-weight: 400;
+//   font-style: italic;
+//   src: url("https://0xmacro.com/library/fonts/Informative-Italic.woff2") format("woff2"),url("https://0xmacro.com/library/fonts/Informative-Italic.woff") format("woff");
+// }
+// @font-face {
+//   /* Medium */
+//   font-family: "Informative";
+//   font-weight: 500;
+//   src: url("https://0xmacro.com/library/fonts/Informative-Medium.woff2") format("woff2"),url("https://0xmacro.com/library/fonts/Informative-Medium.woff") format("woff");
+// }
+// @font-face {
+//   /* Bold */
+//   font-family: "Informative";
+//   font-weight: 700;
+//   src: url("https://0xmacro.com/library/fonts/Informative-Semibold.woff2") format("woff2"),url("https://0xmacro.com/library/fonts/Informative-Semibold.woff") format("woff");
+// }
+
+// @font-face {
+//   font-family: 'Lato';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+// }
