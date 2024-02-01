@@ -5,8 +5,8 @@ const navigation = [
   { name: 'Audits', href: '/audits' },
   { name: 'Team', href: '/team' },
   { name: 'Writing', href: '/writing' },
-  { name: 'Portal', href: 'https://portal.0xmacro.com', newTab: true },
-  // { name: 'Gas Hero', href: '/gas-blaster' },
+  // { name: 'Portal', href: 'https://portal.0xmacro.com', newTab: true },
+  { name: 'Gas Hero', href: '/gas-blaster' },
   // { name: 'Audit Library', href: 'https://0xmacro.com/library', newTab: true },
   // { name: 'Blog', href: 'https://0xmacro.com/blog/', newTab: true },
 ]
