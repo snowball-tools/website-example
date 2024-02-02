@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
-const navigation = [
+const navigation: { name: string; href: string; newTab?: boolean }[] = [
   { name: 'About', href: '/' },
   { name: 'Audits', href: '/audits' },
   { name: 'Team', href: '/team' },
   { name: 'Writing', href: '/writing' },
+
   // { name: 'Portal', href: 'https://portal.0xmacro.com', newTab: true },
   { name: 'Gas Hero', href: '/gas-blaster' },
   // { name: 'Audit Library', href: 'https://0xmacro.com/library', newTab: true },
