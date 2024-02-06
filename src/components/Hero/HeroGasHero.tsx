@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import RocketIcon from '../icons/Rocket'
 
-const HeroGasBlaster = () => {
+const HeroGasHero = () => {
   const [repo, setRepo] = useState('')
 
   return (
@@ -71,4 +71,4 @@ const HeroGasBlaster = () => {
   )
 }
 
-export default HeroGasBlaster
+export default HeroGasHero

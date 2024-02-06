@@ -1,5 +1,5 @@
 import HeroBots from './HeroBots'
-import HeroGasBlaster from './HeroGasBlaster'
+import HeroGasHero from './HeroGasHero'
 import HeroHome from './HeroHome'
 
-export { HeroHome, HeroBots, HeroGasBlaster }
+export { HeroHome, HeroBots, HeroGasHero }

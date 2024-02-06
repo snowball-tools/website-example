@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     title: '0xMacro.com - Gas Hero',
     description: 'Make your contracts gas efficient. Get a one-click Gas Audit.',
     type: 'website',
-    images: '/opengraph/gas-blaster-preview.jpg',
+    images: '/opengraph/gas-hero-preview.jpg',
   },
   twitter: {
-    images: '/opengraph/gas-blaster-preview.jpg',
+    images: '/opengraph/gas-hero-preview.jpg',
   },
 }
 

@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 type ThemeProviderProps = Parameters<typeof NextThemesProvider>[0]
 
 const getForcedTheme = (pathname: string) => {
-  if (pathname == '/gas-blaster') return 'dark'
+  if (pathname == '/gas-hero') return 'dark'
 }
 
 const ThemeProvider = ({ children, ...props }: ThemeProviderProps) => {

@@ -2,7 +2,7 @@
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { HeroGasBlaster } from '@/components/Hero'
+import { HeroGasHero } from '@/components/Hero'
 import PriceCard from '@/components/PriceCard'
 import SampleGasReport from '@/components/SampleGasReport'
 import StandaloneHeading from '@/components/StandaloneHeading'
@@ -15,7 +15,7 @@ import { APP_URL } from '@/utils/constants'
 import { trackEvent } from '@/utils/track'
 import Image from 'next/image'
 
-const GasBlaster = () => {
+const GasHero = () => {
   const handleCtaClick = (pos: string) => (e: React.MouseEvent<HTMLElement>) => {
     trackEvent(e.currentTarget.innerText, { pos })
   }
@@ -28,7 +28,7 @@ const GasBlaster = () => {
         ctaUrl={APP_URL}
         handleCtaClick={handleCtaClick('nav')}
       />
-      <HeroGasBlaster />
+      <HeroGasHero />
       <div className="relative">
         <Image
           src="/misc/sample-gas-report-top-line.svg"
@@ -93,4 +93,4 @@ const GasBlaster = () => {
   )
 }
 
-export default GasBlaster
+export default GasHero

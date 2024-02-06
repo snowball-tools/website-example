@@ -1,3 +1,4 @@
+import ThemeProvider from '@/components/ThemeProvider'
 import type { Metadata } from 'next'
 import '../styles/globals.scss'
 
@@ -22,7 +23,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         src="https://a.0xmacro.com/script.js"
         data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
       ></script>
-      <body className="v2 antialiased">{children}</body>
+      <body className="v2 antialiased">
+        <ThemeProvider defaultTheme="light" attribute="class">
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

@@ -10,7 +10,7 @@ import TestimonialWall from '@/components/TestimonialWall'
 import useRedirect from '@/hooks/useRedirect'
 
 export default function Bots() {
-  useRedirect('/gas-blaster')
+  useRedirect('/gas-hero')
 
   return (
     <main className="relative">
