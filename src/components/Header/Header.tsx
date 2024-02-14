@@ -41,7 +41,7 @@ const Header = ({ ctaUrl, ctaText, handleCtaClick }: HeaderProps) => {
             href={`${APP_URL}/signup`}
             onClick={trackOnClick({ pos: 'nav' })}
           >
-            Sign In to Gas Hero
+            Sign In to the Macro Portal
           </Link>
 
           <CtaSecondary onClick={handleCtaClick} href={ctaUrl || '/'}>

@@ -1,1 +1,1 @@
-export const APP_URL = 'https://gas.0xmacro.com'
+export const APP_URL = 'https://portal.0xmacro.com'
