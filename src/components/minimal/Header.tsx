@@ -13,11 +13,11 @@ const Header = ({}: Props) => {
   return (
     <>
       <div className="dark:bg-night-900">
-        <header className="relative mx-auto py-4 pt-16 max-w-xl mx-auto">
+        <header className=" py-4 pt-10 max-w-xl mx-auto">
           <div className="flex justify-center">
             <Link href="/">
               <Image
-                className="fade-in w-[7.5rem] relative block dark:hidden"
+                className="fade-in w-[7.5rem] block dark:hidden"
                 src="/macro.svg"
                 alt="Macro Logo"
                 width={180}
@@ -25,7 +25,7 @@ const Header = ({}: Props) => {
                 priority
               />
               <Image
-                className="fade-in w-[7.5rem] relative hidden dark:block"
+                className="fade-in w-[7.5rem] hidden dark:block"
                 src="/macro-dark.svg"
                 alt="Macro Logo"
                 width={180}

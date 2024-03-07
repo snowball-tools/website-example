@@ -15,6 +15,7 @@ export default function AuditsPage() {
   console.log('Two', process.env.TYPEFORM_FORM_ID)
   return (
     <div className="">
+      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content mt-8">
@@ -76,7 +77,6 @@ export default function AuditsPage() {
       </main>
 
       <Footer />
-      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
     </div>
   )
 }

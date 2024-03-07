@@ -12,6 +12,7 @@ export default function TeamPage() {
 
   return (
     <div className="">
+      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content mt-8">
@@ -71,7 +72,6 @@ export default function TeamPage() {
       </main>
 
       <Footer />
-      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
     </div>
   )
 }
