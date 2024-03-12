@@ -1,9 +1,11 @@
 import Footer from '@/components/minimal/Footer'
 import Header from '../components/minimal/Header'
+import { RequestAuditSticky } from './audits/RequestAuditSticky'
 
 export default function HomePage() {
   return (
-    <main className="">
+    <div className="">
+      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content mt-6">
@@ -14,6 +16,6 @@ export default function HomePage() {
       </main>
 
       <Footer />
-    </main>
+    </div>
   )
 }

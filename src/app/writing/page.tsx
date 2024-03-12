@@ -3,12 +3,14 @@ import { format } from 'fecha'
 import Link from 'next/link'
 import { getBlogData } from '../../../scripts/build/blog-data'
 import Header from '../../components/minimal/Header'
+import { RequestAuditSticky } from '../audits/RequestAuditSticky'
 
 export default function WritingPage() {
   const posts = getBlogData()
 
   return (
     <div className="">
+      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content mt-8">

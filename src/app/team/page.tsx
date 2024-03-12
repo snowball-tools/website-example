@@ -5,12 +5,14 @@ import XTwitterIcon from '@/components/icons/TwitterX'
 import Footer from '@/components/minimal/Footer'
 import { getTeamData } from '../../../scripts/build/team-data'
 import Header from '../../components/minimal/Header'
+import { RequestAuditSticky } from '../audits/RequestAuditSticky'
 
 export default function TeamPage() {
   const team = getTeamData().filter((member) => member.showOnTeamPage)
 
   return (
     <div className="">
+      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content mt-8">
