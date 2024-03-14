@@ -35,7 +35,7 @@ const HeroBots = () => {
           className="text-electricPurple hover:underline block md:inline"
           href={`${APP_URL}/signup`}
         >
-          Sign In to Swarm
+          Sign-in to the Macro Sentry
         </Link>
       </p>
 
