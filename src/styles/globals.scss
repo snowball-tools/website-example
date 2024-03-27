@@ -27,6 +27,13 @@ main.Content.--wide {
   -webkit-background-clip: text;
 }
 
+.gradient-text-metalic {
+  background: linear-gradient(180deg, #fff 21.83%, #05051e 128.87%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .gradient-background {
   background: var(--gradient, linear-gradient(90deg, #cab7ff 0%, #fe8bbb 50%, #ffbd7a 100%));
 }
