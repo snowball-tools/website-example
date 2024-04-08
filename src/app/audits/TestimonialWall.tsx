@@ -25,7 +25,7 @@ export function TestimonialWall({ testimonials }: Props) {
           return (
             <div
               key={t.id}
-              className={`max-w-[36ch] mx-auto border-l-2 pl-4 dark:bg-darkNavy-100 dark:border-gray-800`}
+              className={`max-w-[36ch] mx-auto border-l-2 pl-4 dark:bg-darkNavy-100 dark:border-gray-800 dark:py-2 dark:pr-4`}
             >
               <p className="text-sm">&quot;{t.quote}&quot;</p>
               <div className="mt-4 flex gap-2 items-center">

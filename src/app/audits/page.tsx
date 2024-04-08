@@ -6,16 +6,12 @@ import { RequestAuditSticky } from './RequestAuditSticky'
 import { TestimonialWall } from './TestimonialWall'
 
 export default function AuditsPage() {
-  const clients = getMacroClientsData().filter(
-    (client) => client.showOnAuditsPage && client.type === 'audit-client',
-  )
-
+  const clients = getMacroClientsData().filter((client) => client.showOnAuditsPage)
   const testimonials = getTestimonialsData().filter((testimonial) => testimonial.showOnAuditsPage)
 
-  console.log('Two', process.env.TYPEFORM_FORM_ID)
   return (
     <div className="">
-      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
+      <RequestAuditSticky formId={process.env.REQUEST_AUDIT_TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content mt-8">

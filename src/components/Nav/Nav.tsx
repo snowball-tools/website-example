@@ -5,6 +5,7 @@ const navigation: { name: string; href: string; newTab?: boolean }[] = [
   { name: 'Audits', href: '/audits' },
   { name: 'Team', href: '/team' },
   { name: 'Writing', href: '/writing' },
+  { name: 'Fellowship', href: '/fellowship' },
   { name: 'Sentry', href: '/sentry' },
 ]
 
@@ -32,7 +33,7 @@ function getNavItems(currentPath: string) {
 
 const Nav = ({ currentPath }: NavProps) => {
   return (
-    <ul className="px-6 w-72 xs:w-auto mx-auto flex flex-wrap justify-center xs:justify-between">
+    <ul className="w-72 xs:w-auto mx-auto flex flex-wrap justify-center xs:justify-between sm:px-6">
       {getNavItems(currentPath)}
     </ul>
   )

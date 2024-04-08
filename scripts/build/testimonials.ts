@@ -19,6 +19,7 @@ export type Testimonial = {
   avatar_url: string
   social_url: string | null
   showOnAuditsPage: boolean
+  showOnFellowshipPage: boolean
 }
 
 const projectDir = path.resolve(process.cwd())
@@ -64,6 +65,7 @@ export async function buildTestimonialsData() {
       avatar_url: entry.properties.Avatar.files[0].file.url,
       social_url: entry.properties.Social.url,
       showOnAuditsPage: entry.properties['Show on Audits Page'].checkbox,
+      showOnFellowshipPage: entry.properties['Show on Fellowship Page'].checkbox,
     }
   })
 

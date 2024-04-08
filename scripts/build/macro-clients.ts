@@ -11,12 +11,12 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env.local') })
 export type MacroClient = {
   /** Necessary for resolving relations (e.g. testimonials) */
   id: string
-  type: 'audit-client'
   name: string
   sort: number
   website: string
   avatar_url: string
   showOnAuditsPage: boolean
+  showOnFellowshipPage: boolean
   social: {
     github: string | null
     twitter: string | null
@@ -56,11 +56,11 @@ export async function buildMacroClientsData() {
     console.log('macro-client>', name)
     return {
       id: entry.id,
-      type: 'audit-client', // TODO: Update when we add more types
       name,
       sort: entry.properties.Sort.number,
       website: entry.properties.Website.url,
       showOnAuditsPage: entry.properties['Show on Audits Page'].checkbox,
+      showOnFellowshipPage: entry.properties['Show on Fellowship Page'].checkbox,
       avatar_url: entry.properties.Avatar.files[0].file.url,
       social: {
         github: entry.properties.Github.url,

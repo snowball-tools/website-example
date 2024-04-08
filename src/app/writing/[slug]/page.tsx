@@ -25,7 +25,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="">
-      <RequestAuditSticky formId={process.env.TYPEFORM_FORM_ID!} />
+      <RequestAuditSticky formId={process.env.REQUEST_AUDIT_TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content --wide mt-4">
