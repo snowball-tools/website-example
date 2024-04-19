@@ -18,7 +18,7 @@ function getNavItems(currentPath: string) {
     <Link
       href={item.href}
       key={item.href}
-      className={`block p-3 transition-colors duration-300 lowercase  font-ui font-medium ${
+      className={`group block p-3 transition-colors duration-300 lowercase font-ui font-medium ${
         currentPath === item.href
           ? 'text-black dark:text-dusk-200'
           : 'text-neutral-400 hover:text-black dark:text-dusk-800 dark:hover:text-dusk-300'
@@ -27,6 +27,11 @@ function getNavItems(currentPath: string) {
       target={item.newTab ? '_blank' : undefined}
     >
       {item.name}
+      {item.name === 'Sentry' && (
+        <span className="inline-block text-[10px] relative top-[-7px] left-[6px] p-[3px] rounded-sm leading-[10px] bg-dusk-200 group-hover:bg-dusk-300 dark:bg-white/60 dark:group-hover:bg-white text-black group-hover:text-black transition duration-300">
+          new
+        </span>
+      )}
     </Link>
   ))
 }
