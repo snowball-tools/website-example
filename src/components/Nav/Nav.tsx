@@ -1,8 +1,7 @@
 import Link from 'next/link'
 
 const navigation: { name: string; href: string; newTab?: boolean }[] = [
-  { name: 'About', href: '/' },
-  { name: 'Audits', href: '/audits' },
+  { name: 'Audits', href: '/' },
   { name: 'Team', href: '/team' },
   { name: 'Writing', href: '/writing' },
   { name: 'Fellowship', href: '/fellowship' },
@@ -27,11 +26,6 @@ function getNavItems(currentPath: string) {
       target={item.newTab ? '_blank' : undefined}
     >
       {item.name}
-      {item.name === 'Sentry' && (
-        <span className="inline-block text-[10px] relative top-[-7px] left-[6px] p-[3px] rounded-sm leading-[10px] bg-dusk-200 group-hover:bg-dusk-300 dark:bg-white/60 dark:group-hover:bg-white text-black group-hover:text-black transition duration-300">
-          new
-        </span>
-      )}
     </Link>
   ))
 }

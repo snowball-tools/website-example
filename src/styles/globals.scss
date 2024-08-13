@@ -6,6 +6,7 @@
 @import './_variables.scss';
 @import './_typography.scss';
 @import './_ghost.scss';
+@import './_fancy-button.css';
 
 body {
   @apply dark:bg-night-900 dark:text-dusk-200;
@@ -17,6 +18,10 @@ main.Content {
 
 main.Content.--wide {
   @apply px-3;
+}
+
+.flex-center {
+  @apply flex flex-col items-center justify-center;
 }
 
 .gradient-text,

@@ -2,7 +2,6 @@ import Footer from '@/components/minimal/Footer'
 import { getMacroClientsData } from '../../../scripts/build/macro-clients'
 import { getTestimonialsData } from '../../../scripts/build/testimonials'
 import Header from '../../components/minimal/Header'
-import { RequestAuditSticky } from '../audits/RequestAuditSticky'
 import { TestimonialWall } from '../audits/TestimonialWall'
 import { FellowshipCta } from './FellowshipCta'
 
@@ -14,7 +13,6 @@ export default function FellowshipPage() {
 
   return (
     <div>
-      <RequestAuditSticky formId={process.env.REQUEST_AUDIT_TYPEFORM_FORM_ID!} />
       <Header />
       <main className="Content mt-8">
         <h1 className="text-[1.3rem] font-semibold">Smart Contract Engineering Fellowship</h1>

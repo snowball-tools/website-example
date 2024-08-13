@@ -1,5 +1,6 @@
 'use client'
 
+import { RequestAuditBanner } from '@/app/audits/RequestAuditBanner'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -13,6 +14,7 @@ const Header = ({}: Props) => {
   return (
     <>
       <div className="dark:bg-night-900">
+        <RequestAuditBanner />
         <header className=" py-4 pt-10 max-w-xl mx-auto">
           <div className="flex justify-center">
             <Link href="/">

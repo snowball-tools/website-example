@@ -1,4 +1,3 @@
-import { RequestAuditSticky } from '@/app/audits/RequestAuditSticky'
 import Footer from '@/components/minimal/Footer'
 import { format } from 'fecha'
 import { getBlogData } from '../../../../scripts/build/blog-data'
@@ -25,7 +24,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="">
-      <RequestAuditSticky formId={process.env.REQUEST_AUDIT_TYPEFORM_FORM_ID!} />
       <Header />
 
       <main className="Content --wide mt-4">
