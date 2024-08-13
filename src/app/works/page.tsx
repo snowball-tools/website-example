@@ -1,10 +1,4 @@
-import FarcasterIcon from '@/components/icons/Farcaster'
-import GithubIcon from '@/components/icons/Github'
-import TelegramIcon from '@/components/icons/Telegram'
-import XTwitterIcon from '@/components/icons/TwitterX'
 import Footer from '@/components/minimal/Footer'
-import Link from 'next/link'
-import { getTeamData } from '../../../scripts/build/team-data'
 import { getWorksData } from '../../../scripts/build/works'
 import Header from '../../components/minimal/Header'
 
