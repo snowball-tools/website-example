@@ -51,6 +51,7 @@ export default function WorksPage() {
                           const p = count / totalIssueCount
                           return (
                             <div
+                              key={severity}
                               className={`overflow-hidden flex-center ${
                                 // prettier-ignore
                                 severity === 'C' ? 'bg-gray-800 dark:bg-black text-white dark:text-white' :
