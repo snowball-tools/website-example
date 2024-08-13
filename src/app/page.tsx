@@ -1,4 +1,5 @@
 import Footer from '@/components/minimal/Footer'
+import Link from 'next/link'
 import { getMacroClientsData } from '../../scripts/build/macro-clients'
 import { getTestimonialsData } from '../../scripts/build/testimonials'
 import Header from '../components/minimal/Header'
@@ -22,9 +23,9 @@ export default function AuditsPage() {
         <h1 className="mt-10 text-[1.3rem] font-semibold">Our Work</h1>
         <p className="mt-3">
           See our library of past audits{' '}
-          <a href="/library" className="underline">
+          <Link href="/works" className="underline">
             here
-          </a>
+          </Link>
           .
         </p>
 
