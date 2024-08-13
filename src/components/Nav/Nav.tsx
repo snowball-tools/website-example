@@ -3,9 +3,8 @@ import Link from 'next/link'
 const navigation: { name: string; href: string; newTab?: boolean }[] = [
   { name: 'Audits', href: '/' },
   { name: 'Team', href: '/team' },
-  { name: 'Writing', href: '/writing' },
-  { name: 'Fellowship', href: '/fellowship' },
-  { name: 'Sentry', href: '/sentry' },
+  { name: 'Works', href: '/works' },
+  { name: 'Sentry', href: '/quote' },
 ]
 
 type NavProps = {

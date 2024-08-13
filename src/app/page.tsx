@@ -2,7 +2,6 @@ import Footer from '@/components/minimal/Footer'
 import { getMacroClientsData } from '../../scripts/build/macro-clients'
 import { getTestimonialsData } from '../../scripts/build/testimonials'
 import Header from '../components/minimal/Header'
-import { RequestAuditBanner } from './audits/RequestAuditBanner'
 import { TestimonialWall } from './audits/TestimonialWall'
 
 export default function AuditsPage() {

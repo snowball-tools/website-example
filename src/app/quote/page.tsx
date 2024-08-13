@@ -5,7 +5,6 @@ import Footer from '@/components/minimal/Footer'
 import Header from '@/components/minimal/Header'
 import { APP_URL } from '@/utils/constants'
 import Link from 'next/link'
-import { RequestAuditSticky } from '../audits/RequestAuditSticky'
 
 const Benefits = () => {
   const benefits = [
@@ -30,7 +29,6 @@ const Benefits = () => {
 const Sentry = () => {
   return (
     <main>
-      <RequestAuditSticky formId={process.env.REQUEST_AUDIT_TYPEFORM_FORM_ID!} />
       <Header />
       <article className="bg-[#fcfcfc] p-5 rounded-2xl max-w-xl mx-3 sm:mx-auto sm:p-6 sm:mt-4 dark:bg-night-800 dark:bg-opacity-70">
         <div className="flex flex-col">
