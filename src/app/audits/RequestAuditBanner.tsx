@@ -9,8 +9,10 @@ import { useRef } from 'react'
 const formId = process.env.NEXT_PUBLIC_REQUEST_AUDIT_TYPEFORM_FORM_ID!
 
 export function RequestAuditBanner({ className }: { className?: string }) {
-  const ref = useRef<any>()
-  const openPopup = () => ref.current?.open()
+  const openPopup = () => {
+    const btn: HTMLButtonElement | null = document.querySelector('.InqueryButton')
+    btn?.click()
+  }
   return (
     <div
       className={`p-5 pb-6 bg-dusk-50 dark:bg-gray-900 border-b border-gray-200 dark:border-neutral-800 flex-center transition ${className}`}
@@ -20,7 +22,7 @@ export function RequestAuditBanner({ className }: { className?: string }) {
           Need an audit or want to learn more?
         </div>
         <div className="flex-center sm:flex-row gap-1 sm:gap-2">
-          <PopupButton id={formId} className="hidden" embedRef={ref}>
+          <PopupButton id={formId} className="InqueryButton hidden">
             Not shown
           </PopupButton>
 
