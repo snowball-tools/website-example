@@ -1,4 +1,5 @@
 import Footer from '@/components/minimal/Footer'
+import Image from 'next/image'
 import Link from 'next/link'
 import { getMacroClientsData } from '../../scripts/build/macro-clients'
 import { getTestimonialsData } from '../../scripts/build/testimonials'
@@ -58,7 +59,14 @@ export default function AuditsPage() {
               target="_blank"
               className="p-5 sm:px-7 h-16 border border-gray-200 hover:border-neutral-300 dark:border-dusk-300 dark:bg-dusk-100 dark:hover:bg-dusk-50 rounded-lg flex items-center transition"
             >
-              <img src={client.avatar_url} alt={client.name} className="w-full max-h-full" />
+              <Image
+                src={client.avatar_url}
+                alt={client.name}
+                className="w-full max-h-full"
+                // These values don't matter for whatever reason
+                width={300}
+                height={60}
+              />
             </a>
           ))}
         </div>
