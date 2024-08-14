@@ -39,7 +39,7 @@ export default function WorksPage() {
                   </div>
 
                   <div className="text-neutral-400 dark:text-dusk-700/80 text-xs">
-                    {totalIssueCount} issues
+                    {totalIssueCount} issue{totalIssueCount !== 1 ? 's' : ''}
                   </div>
                 </div>
 
