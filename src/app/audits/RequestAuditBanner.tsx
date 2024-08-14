@@ -13,7 +13,7 @@ export function RequestAuditBanner({ className }: { className?: string }) {
   const openPopup = () => ref.current?.open()
   return (
     <div
-      className={`p-5 pb-6 bg-dusk-50 border-b border-gray-200 dark:border-dusk-300 dark:bg-dusk-100 flex-center transition ${className}`}
+      className={`p-5 pb-6 bg-dusk-50 dark:bg-gray-900 border-b border-gray-200 dark:border-neutral-800 flex-center transition ${className}`}
     >
       <div className="flex-center gap-4">
         <div className="flex px-2 dark:text-white text-center">
@@ -21,20 +21,19 @@ export function RequestAuditBanner({ className }: { className?: string }) {
         </div>
         <div className="flex-center sm:flex-row gap-1 sm:gap-2">
           <PopupButton id={formId} className="hidden" embedRef={ref}>
-            <span className="font-semibold">Submit an Inquiry</span>
-            <OpenLinkIcon className="h-4 flex-shrink-0 text-dusk-700 group-hover:text-dusk-900" />
+            Not shown
           </PopupButton>
 
           <FancyButton onClick={openPopup}>
             <span className="font-semibold">Submit an Inquiry</span>
-            <OpenLinkIcon className="ml-1.5 h-3.5 relative top-[-1px] flex-shrink-0 text-dusk-700 group-hover:text-black transform" />
+            <OpenLinkIcon className="ml-1.5 h-3.5 relative top-[-1px] flex-shrink-0 text-dusk-700 group-hover:text-black dark:group-hover:text-white transform" />
           </FancyButton>
 
           <div className="text-xs dark:text-white xs:text-sm text-center">or</div>
 
           <FancyButton as="a" href="https://t.me/haileybf" target="_blank">
             <span className="font-semibold">Message on Telegram</span>
-            <TelegramIcon className="ml-1 w-4 flex-shrink-0 text-dusk-700 group-hover:text-black transform" />
+            <TelegramIcon className="ml-1 w-4 flex-shrink-0 text-dusk-700 group-hover:text-black dark:group-hover:text-white transform" />
           </FancyButton>
         </div>
       </div>

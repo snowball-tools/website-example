@@ -38,7 +38,9 @@ export default function WorksPage() {
                     {/* </Link> */}
                   </div>
 
-                  <div className="text-neutral-400 text-xs">{totalIssueCount} issues</div>
+                  <div className="text-neutral-400 dark:text-dusk-700/80 text-xs">
+                    {totalIssueCount} issues
+                  </div>
                 </div>
 
                 <div className="h-5">
@@ -54,12 +56,12 @@ export default function WorksPage() {
                               key={severity}
                               className={`overflow-hidden flex-center ${
                                 // prettier-ignore
-                                severity === 'C' ? 'bg-gray-800 dark:bg-black text-white dark:text-white' :
-                            severity === 'H' ? 'bg-red-400 dark:text-black' :
-                            severity === 'M' ? 'bg-yellow-400 dark:text-black' :
-                            severity === 'L' ? 'bg-yellow-200 dark:text-black' :
-                            severity === 'Q' ? 'bg-blue-300 dark:text-black' :
-                            'bg-gray-200 dark:text-black'
+                                severity === 'C' ? 'bg-gray-800 dark:bg-black text-white dark:text-white' + (p > 0.01 ? ' dark:border border-white' : '') :
+                                severity === 'H' ? 'bg-red-400 dark:text-black' :
+                                severity === 'M' ? 'bg-yellow-400 dark:text-black' :
+                                severity === 'L' ? 'bg-yellow-200 dark:text-black' :
+                                severity === 'Q' ? 'bg-blue-300 dark:text-black' :
+                                'bg-gray-200 dark:text-black'
                               }`}
                               style={{
                                 width: `${p * 100}%`,
