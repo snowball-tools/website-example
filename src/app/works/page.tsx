@@ -1,6 +1,8 @@
 import Footer from '@/components/minimal/Footer'
-import { getWorksData } from '../../../scripts/build/works'
+import { AuditWorkIssueSeverity, getWorksData } from '../../../scripts/build/works'
 import Header from '../../components/minimal/Header'
+
+type Severity = AuditWorkIssueSeverity
 
 export default function WorksPage() {
   const works = getWorksData()
@@ -18,8 +20,34 @@ export default function WorksPage() {
         <div className="mt-8 grid grid-flow-row xs:grid-cols-2 gap-6">
           {works.map((item, i) => {
             if (!item.issues) return null
-            const totalIssueCount = Object.values(item.issues).reduce((acc, val) => acc + val, 0)
+
+            const impactfulCount =
+              (item.issues.C || 0) +
+              (item.issues.H || 0) +
+              (item.issues.M || 0) +
+              (item.issues.L || 0)
+
+            const minorCount = (item.issues.Q || 0) + (item.issues.G || 0) + (item.issues.I || 0)
+
+            const totalIssueCount = impactfulCount + minorCount
             if (totalIssueCount === 0) return null
+
+            const minorP = minorCount / totalIssueCount
+            const sections = [
+              {
+                severities: 'IGQ'.split('') as Severity[],
+                count: minorCount,
+                styles: {
+                  width: minorP > 0.33 && impactfulCount >= 3 ? '33%' : `${minorP * 100}%`,
+                },
+              },
+              {
+                severities: 'LMHC'.split('') as Severity[],
+                count: impactfulCount,
+                styles: { flex: 1 },
+              },
+            ]
+
             return (
               <a
                 href={item.reportUrl}
@@ -45,32 +73,34 @@ export default function WorksPage() {
 
                 <div className="h-5">
                   {totalIssueCount === 0 && <div className="h-1 bg-neutral-50"></div>}
-                  {totalIssueCount > 0 && (
-                    <div className="h-1 group-hover:h-5 flex items-stretch overflow-hidden transition-[height]">
-                      {Object.entries(item.issues)
-                        .reverse()
-                        .map(([severity, count]) => {
-                          const p = count / totalIssueCount
-                          return (
-                            <div
-                              key={severity}
-                              className={`overflow-hidden flex-center ${
-                                // prettier-ignore
-                                severity === 'C' ? 'bg-gray-800 dark:bg-black text-white dark:text-white' + (p > 0.01 ? ' dark:border border-white' : '') :
+                  <div className="h-1 group-hover:h-5 flex items-stretch overflow-hidden transition-[height]">
+                    {sections.map(({ severities, count, styles }) =>
+                      count === 0 ? null : (
+                        <div className="h-5 flex items-stretch" style={styles}>
+                          {severities.map((severity) => {
+                            const p = item.issues[severity] / count
+                            return (
+                              <div
+                                key={severity}
+                                className={`overflow-hidden flex-center ${
+                                  // prettier-ignore
+                                  severity === 'C' ? 'bg-gray-800 dark:bg-black text-white dark:text-white' + (p > 0.01 ? ' dark:border border-white' : '') :
                                 severity === 'H' ? 'bg-red-400 dark:text-black' :
                                 severity === 'M' ? 'bg-yellow-400 dark:text-black' :
                                 severity === 'L' ? 'bg-yellow-200 dark:text-black' :
                                 severity === 'Q' ? 'bg-blue-300 dark:text-black' :
                                 'bg-gray-200 dark:text-black'
-                              }`}
-                              style={{
-                                width: `${p * 100}%`,
-                              }}
-                            ></div>
-                          )
-                        })}
-                    </div>
-                  )}
+                                }`}
+                                style={{
+                                  width: `${p * 100}%`,
+                                }}
+                              ></div>
+                            )
+                          })}
+                        </div>
+                      ),
+                    )}
+                  </div>
                 </div>
               </a>
             )
