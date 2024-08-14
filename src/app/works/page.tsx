@@ -74,9 +74,9 @@ export default function WorksPage() {
                 <div className="h-5">
                   {totalIssueCount === 0 && <div className="h-1 bg-neutral-50"></div>}
                   <div className="h-1 group-hover:h-5 flex items-stretch overflow-hidden transition-[height]">
-                    {sections.map(({ severities, count, styles }) =>
+                    {sections.map(({ severities, count, styles }, j) =>
                       count === 0 ? null : (
-                        <div className="h-5 flex items-stretch" style={styles}>
+                        <div className="h-5 flex items-stretch" style={styles} key={j}>
                           {severities.map((severity) => {
                             const p = item.issues[severity] / count
                             return (
