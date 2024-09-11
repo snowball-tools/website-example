@@ -38,7 +38,7 @@ export default function WorksPageContent({ works }: Props) {
         </div>
 
         <div
-          className={`grid ${detailed ? 'mt-12 grid-cols-1 gap-12' : 'mt-8 xs:grid-cols-2 gap-6'}`}
+          className={`grid ${detailed ? 'mt-12 grid-cols-1 gap-16' : 'mt-8 xs:grid-cols-2 gap-6'}`}
         >
           {works.map((item, i) =>
             detailed ? (
@@ -146,34 +146,33 @@ const DetailedWorkItem = ({ item }: { item: AuditWork }) => {
         )}
         <h2 className="text-xl font-semibold">{item.title}</h2>
         <ExternalLinkIcon className="h-4 text-neutral-800 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+        <div className="flex-1"></div>
+        <div className="text-sm font-medium">
+          {totalIssueCount} issue{totalIssueCount !== 1 ? 's' : ''}
+        </div>
       </a>
 
-      <div className="text-sm text-neutral-700 dark:text-dusk-600 leading-tight">
-        {item.subtitle}
-      </div>
-
-      <div>
-        <div className="flex justify-between items-center">
-          <div className="text-sm font-medium">
-            {totalIssueCount} issue{totalIssueCount !== 1 ? 's' : ''}
-          </div>
-          <div className="text-sm text-neutral-400 dark:text-dusk-700/80">
-            {new Date(item.date).toLocaleDateString()}
-          </div>
+      <div className="flex justify-between">
+        <div className="pr-2 text-sm text-neutral-700 dark:text-dusk-600 leading-tight">
+          {item.subtitle}
         </div>
-
-        <div className="mt-1 h-5 flex items-stretch overflow-hidden rounded-sm">
+        <div className="pt-[1px] text-xs text-neutral-400 dark:text-dusk-700/80">
+          {new Date(item.date).toLocaleDateString()}
+        </div>
+      </div>
+      <div>
+        <div className="h-5 flex items-stretch overflow-hidden rounded-sm">
           {objectEntries(item.issues).map(([severity, count]) => (
             <div
               key={severity}
               className={`overflow-hidden flex-center ${
                 // prettier-ignore
                 severity === 'C' ? 'bg-gray-800 dark:bg-black text-white' :
-                severity === 'H' ? 'bg-red-400' :
-                severity === 'M' ? 'bg-yellow-400' :
-                severity === 'L' ? 'bg-yellow-200' :
-                severity === 'Q' ? 'bg-blue-300' :
-                'bg-gray-200'
+                severity === 'H' ? 'bg-red-400 dark:bg-[#c2393f]' :
+                severity === 'M' ? 'bg-yellow-400 dark:bg-yellow-600' :
+                severity === 'L' ? 'bg-yellow-200 dark:bg-[#c6a530]' :
+                severity === 'Q' ? 'bg-blue-300 dark:bg-[#4075c4]' :
+                'bg-gray-200 dark:bg-gray-400'
               }`}
               style={{
                 width: `${((count || 0) / totalIssueCount) * 100}%`,
@@ -192,6 +191,12 @@ const DetailedWorkItem = ({ item }: { item: AuditWork }) => {
           ))}
         </div>
       </div>
+      {item.about && (
+        <div
+          className="pt-1 leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: item.about }}
+        ></div>
+      )}
     </div>
   )
 }
