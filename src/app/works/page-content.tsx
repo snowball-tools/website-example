@@ -153,7 +153,7 @@ const DetailedWorkItem = ({ item }: { item: AuditWork }) => {
       </a>
 
       <div className="flex justify-between">
-        <div className="pr-2 text-sm text-neutral-700 dark:text-dusk-600 leading-tight">
+        <div className="pr-2 text-sm text-gray-700 dark:text-dusk-600 leading-tight">
           {item.subtitle}
         </div>
         <div className="pt-[1px] text-xs text-neutral-400 dark:text-dusk-700/80">
@@ -181,7 +181,7 @@ const DetailedWorkItem = ({ item }: { item: AuditWork }) => {
               {count && count > 0 && (
                 <span
                   className={`text-xs font-medium ${
-                    severity === 'C' ? 'text-white/80' : 'text-neutral-900/30 dark:text-black/70'
+                    severity === 'C' ? 'text-white/80' : 'text-neutral-900/50 dark:text-black/70'
                   }`}
                 >
                   {prettySeverityName(severity)}
