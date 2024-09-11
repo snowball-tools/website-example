@@ -69,16 +69,16 @@ const SummaryWorkItem = ({ item }: { item: AuditWork }) => {
   const minorP = minorCount / totalIssueCount
   const sections = [
     {
-      severities: 'IGQ'.split('') as Severity[],
+      severities: 'CHML'.split('') as Severity[],
+      count: impactfulCount,
+      styles: { flex: 1 },
+    },
+    {
+      severities: 'QGI'.split('') as Severity[],
       count: minorCount,
       styles: {
         width: minorP > 0.33 && impactfulCount >= 3 ? '33%' : `${minorP * 100}%`,
       },
-    },
-    {
-      severities: 'LMHC'.split('') as Severity[],
-      count: impactfulCount,
-      styles: { flex: 1 },
     },
   ]
 
@@ -110,11 +110,11 @@ const SummaryWorkItem = ({ item }: { item: AuditWork }) => {
                       className={`overflow-hidden flex-center ${
                         // prettier-ignore
                         severity === 'C' ? 'bg-gray-800 dark:bg-black text-white dark:text-white' + (p > 0.01 ? ' dark:border border-white' : '') :
-                        severity === 'H' ? 'bg-red-400 dark:text-black' :
-                        severity === 'M' ? 'bg-yellow-400 dark:text-black' :
-                        severity === 'L' ? 'bg-yellow-200 dark:text-black' :
-                        severity === 'Q' ? 'bg-blue-300 dark:text-black' :
-                        'bg-gray-200 dark:text-black'
+                        severity === 'H' ? 'bg-red-400 dark:bg-[#c2393f]' :
+                        severity === 'M' ? 'bg-yellow-400 dark:bg-yellow-600' :
+                        severity === 'L' ? 'bg-yellow-200 dark:bg-[#c6a530]' :
+                        severity === 'Q' ? 'bg-blue-300 dark:bg-[#4075c4]' :
+                        'bg-gray-200 dark:bg-gray-400'
                       }`}
                       style={{
                         width: `${p * 100}%`,
