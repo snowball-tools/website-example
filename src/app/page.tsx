@@ -1,3 +1,4 @@
+import { FancyButton } from '@/components/FancyButton'
 import Footer from '@/components/minimal/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -5,6 +6,7 @@ import { getMacroClientsData } from '../../scripts/build/macro-clients'
 import { getTestimonialsData } from '../../scripts/build/testimonials'
 import Header from '../components/minimal/Header'
 import { TestimonialWall } from './audits/TestimonialWall'
+import { AuditsPageContent } from './page-content'
 
 export default function AuditsPage() {
   const clients = getMacroClientsData().filter((client) => client.showOnAuditsPage)
@@ -74,6 +76,8 @@ export default function AuditsPage() {
         <div className="mt-12">
           <TestimonialWall testimonials={testimonials} />
         </div>
+
+        <AuditsPageContent />
       </main>
 
       <Footer />
