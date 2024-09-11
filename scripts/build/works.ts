@@ -7,7 +7,7 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env.local') })
 export type AuditWorkIssueSeverity = 'C' | 'H' | 'M' | 'L' | 'Q' | 'G' | 'I'
 export type AuditWork = {
   title: string
-  issues: Record<AuditWorkIssueSeverity, number>
+  issues?: Record<AuditWorkIssueSeverity, number>
   subtitle: string
   date: string
   about: string
