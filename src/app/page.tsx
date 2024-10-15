@@ -1,16 +1,21 @@
 import { FancyButton } from '@/components/FancyButton'
 import Footer from '@/components/minimal/Footer'
+import { getMacroClientsData } from '@/lib/macro-clients'
+import { getTestimonialsData } from '@/lib/testimonials'
 import Image from 'next/image'
 import Link from 'next/link'
-import { getMacroClientsData } from '../../scripts/build/macro-clients'
-import { getTestimonialsData } from '../../scripts/build/testimonials'
 import Header from '../components/minimal/Header'
 import { TestimonialWall } from './audits/TestimonialWall'
 import { AuditsPageContent } from './page-content'
 
-export default function AuditsPage() {
-  const clients = getMacroClientsData().filter((client) => client.showOnAuditsPage)
-  const testimonials = getTestimonialsData().filter((testimonial) => testimonial.showOnAuditsPage)
+export default async function AuditsPage() {
+  const [allClients, allTestimonials] = await Promise.all([
+    getMacroClientsData(),
+    getTestimonialsData(),
+  ])
+
+  const clients = allClients.filter((client) => client.showOnAuditsPage)
+  const testimonials = allTestimonials.filter((testimonial) => testimonial.showOnAuditsPage)
 
   return (
     <div className="">
